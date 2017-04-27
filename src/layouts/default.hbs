@@ -8,19 +8,11 @@
     <link rel="stylesheet" type="text/css" href="{{root}}style.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width">
+    <title>{{ title }}</title>
   </head>
   <body>
-    <table class="body">
-      <tr>
-        <td class="center" align="center" valign="top">
-          <center>
-            {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created. --}}
-            {{> body}}
-          </center>
-        </td>
-      </tr>
-    </table>
+    {{> body}}
     <!-- prevent Gmail on iOS font size manipulation -->
-   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+    <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
   </body>
 </html>

@@ -1,0 +1,13 @@
+.wide {
+
+}
+
+.narrow {
+  .columns.first {
+    padding-left: $global-gutter * 2;
+  }
+
+  .columns.last {
+    padding-right: $global-gutter * 2;
+  }
+}

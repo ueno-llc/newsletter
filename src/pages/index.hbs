@@ -1,7 +1,149 @@
-<container>
+---
+title: ueno. Newsletter
+---
+
+{{#> section}}
+<container class="header narrow">
   <row>
-    <columns>
-      <h1>Hi.</h1>
+    <columns small="6">
+      <img src="images/ueno-logo.jpg" width="62" height="14" alt="ueno." class="header__logo">
+    </columns>
+    <columns small="6">
+      <p class="header__date">Friday, April 28, 2017</p>
     </columns>
   </row>
 </container>
+
+<container class="narrow">
+  <row>
+    <columns>
+      <h1 class="heading">This is exciting.</h1>
+      <p class="subheading">We're opening a new office in Los Angeles!</p>
+      <spacer size="35">
+    </columns>
+  </row>
+</container>
+
+<wrapper class="wide">
+  <img src="images/office.jpg" class="image" width="600" height="348" alt="Photo of new ueno. office">
+</wrapper>
+
+<container class="narrow">
+  <row>
+    <columns>
+      <spacer size="55">
+      <p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, labore inventore consectetur, assumenda debitis quia! Aut, harum eius minus nostrum possimus voluptatem nulla, ipsam eveniet non sint quo officiis at!</p>
+      <a href="#" class="link">Read more</a>
+
+      {{> divider spacing='70' color='e5e5e5'}}
+
+      <h2 class="heading heading--sub">We are growing up</h2>
+      <p class="subheading subheading--sub">Our new family members</p>
+      <spacer size="35">
+      <p class="body">We are stoked to announce Jenny Johannesson, Senior Designer and Tawny Holguin, Chief Operation Officer are joining the San Francisco team.</p>
+    </columns>
+  </row>
+</container>
+
+<container>
+  <row>
+    <columns small="6">
+      <img class="portrait" src="images/jenny.jpg" width="240" height="304" alt="Jenny Johannesson">
+    </columns>
+    <columns small="6">
+      <img class="portrait" src="images/tawny.jpg" width="240" height="304" alt="Tawny Holguin">
+    </columns>
+  </row>
+</container>
+
+<container class="narrow">
+  <row>
+    <columns>
+      {{> divider spacing='70' color='e5e5e5'}}
+
+      <h1 class="heading heading--sub">Proud to announce</h1>
+      <p class="subheading subheading--sub">Uber.Design is now live!</p>
+      <spacer size="35">
+      <p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, fuga! Magnam laudantium ut enim, reiciendis asperiores est facilis assumenda tempore earum consequatur vitae iste, aut vero, repellendus quisquam, dolores. Suscipit?</p>
+      <a href="#" class="link">Read more</a>
+    </columns>
+  </row>
+</container>
+
+<container>
+  <row>
+    <columns>
+      <img class="image" src="images/uber-design.jpg" alt="uber.design landing page">
+    </columns>
+  </row>
+</container>
+{{/section}}
+
+{{#> section}}
+<container class="header narrow">
+  <row>
+    <columns small="6">
+      <img src="images/ueno-store-logo.jpg" width="124" height="18" alt="ueno.store" class="header__logo">
+    </columns>
+    <columns small="6">
+      <a href="http://ueno.store" class="link">Visit store</a>
+    </columns>
+  </row>
+</container>
+
+<wrapper class="wide">
+  <img src="images/store/playing-cards.jpg" class="image" width="599" height="361" alt="Hand holding playing cards">
+</wrapper>
+
+<container class="narrow">
+  <row>
+    <columns>
+      <a href="#" class="title">MINIM Playing Cards &mdash; $10</a>
+      <a href="#" class="subtitle">Areaware</a>
+      <spacer size="80">
+    </columns>
+  </row>
+</container>
+
+<wrapper class="wide">
+  <img src="images/store/cat-socks.jpg" class="image" width="599" height="360" alt="Feet wearing cat-themed socks with stripes">
+</wrapper>
+
+<container class="narrow">
+  <row>
+    <columns>
+      <a href="#" class="title">Cat Socks &mdash; $8.99</a>
+      <a href="#" class="subtitle">CoCozy</a>
+      <spacer size="100">
+    </columns>
+  </row>
+</container>
+{{/section}}
+
+{{#> section}}
+<container class="header narrow">
+  <row>
+    <columns small="6">
+      <img src="images/ueno-store-logo.jpg" width="124" height="18" alt="ueno.store" class="header__logo">
+    </columns>
+    <columns small="6">
+      <a href="http://ueno.design" class="link">Visit website</a>
+    </columns>
+  </row>
+</container>
+
+<container>
+  <row>
+    <columns small="6">
+      {{#each (slice ueno_design.08_28 0 4)}}
+        {{> store-item this}}
+      {{/each}}
+    </columns>
+    <columns small="6">
+      {{#each (slice ueno_design.08_28 4)}}
+        {{> store-item this}}
+      {{/each}}
+    </columns>
+  </row>
+</container>
+{{/section}}

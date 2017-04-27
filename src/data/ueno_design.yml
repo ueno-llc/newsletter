@@ -1,0 +1,41 @@
+08_28:
+  -
+    image: egg
+    type: Photography
+    posted_by: Jenny
+    link: /
+  -
+    image: bird
+    type: Graphic Design
+    posted_by: Romain
+    link: /
+  -
+    image: people
+    type: Illustration
+    posted_by: Haraldur
+    link: /
+  -
+    image: kurva
+    type: Branding
+    posted_by: Robbin
+    link: /
+  -
+    image: rings
+    type: Art
+    posted_by: Carolyn
+    link: /
+  -
+    image: phone
+    type: Art
+    posted_by: Robin
+    link: /
+  -
+    image: triathalon
+    type: Illustration
+    posted_by: Romain
+    link: /
+  -
+    image: cafe
+    type: Branding
+    posted_by: Robbin
+    link: /

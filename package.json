@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run clean && run-p watch-emails watch-sass watch-assets server",
     "build": "run-s clean compile-emails sass assets inline",
-    "watch-emails": "onchange 'src/**/*.hbs' -i -- npm run compile-emails",
+    "watch-emails": "onchange 'src/**/*.{hbs,yml,js}' -i -- npm run compile-emails",
     "compile-emails": "run-s compile-emails:compile compile-emails:inky",
     "compile-emails:compile": "panini src .tmp",
     "compile-emails:inky": "inky .tmp/*.html .tmp",
@@ -15,8 +15,8 @@
     "sass": "node-sass --include-path=. -o=.tmp src/styles",
     "watch-sass": "npm run sass && npm run sass -- --watch",
     "inline": "inliney .tmp/**/*.html .tmp",
-    "clean": "rimraf .tmp",
-    "server": "lite-server --baseDir='.tmp'",
+    "clean": "rimraf .tmp && mkdir .tmp",
+    "server": "cd .tmp && lite-server",
     "test": "mocha"
   },
   "repository": {

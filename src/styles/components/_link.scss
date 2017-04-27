@@ -1,0 +1,12 @@
+.link {
+  font-family: 'Akagi Pro', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+
+  &,
+  &:link,
+  &:hover,
+  &:visited {
+    color: $color-black;
+  }
+}

@@ -1,0 +1,18 @@
+.title,
+.subtitle {
+  font-family: 'Akagi Pro', Helvetica, Arial, sans-serif;
+}
+
+.title {
+  font-size: 18px;
+  margin: 0;
+  color: $black;
+  display: block;
+}
+
+.subtitle {
+  font-size: 15px;
+  margin: 0;
+  color: $color-dark-gray;
+  display: block;
+}
