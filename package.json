@@ -1,0 +1,50 @@
+{
+  "name": "email-templates",
+  "version": "1.0.0",
+  "description": "ueno. email templates",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean && run-p watch-emails watch-sass server",
+    "build": "run-s clean compile-emails sass inline",
+    "watch-emails": "onchange \"src/**/*.hbs\" -i -- npm run compile-emails",
+    "compile-emails": "run-s compile-emails:compile compile-emails:inky",
+    "compile-emails:compile": "panini src .tmp",
+    "compile-emails:inky": "inky .tmp/*.html .tmp",
+    "watch-assets": "onchange \"src/assets/**/*\" -i -- npm run assets",
+    "assets": "cpy src/assets/**/* .tmp",
+    "sass": "node-sass --include-path=. -o=.tmp src/styles",
+    "watch-sass": "npm run sass && npm run sass -- --watch",
+    "inline": "inliney .tmp/**/*.html .tmp",
+    "clean": "rimraf .tmp",
+    "server": "lite-server --baseDir=\".tmp\"",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ueno-llc/email-templates.git"
+  },
+  "keywords": [
+    "ueno",
+    "email"
+  ],
+  "author": "ueno. <hi@ueno.co> (http://ueno.co)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ueno-llc/email-templates/issues"
+  },
+  "homepage": "https://github.com/ueno-llc/email-templates#readme",
+  "devDependencies": {
+    "cpy-cli": "^1.0.1",
+    "inky-cli": "^1.0.1",
+    "inliney": "^1.1.0",
+    "node-sass": "^4.5.2",
+    "npm-run-all": "^4.0.2",
+    "onchange": "^3.2.1",
+    "panini": "^2.0.0-alpha.2",
+    "pug": "^2.0.0-beta.12",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "foundation-emails": "^2.2.1"
+  }
+}
