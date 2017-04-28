@@ -58,7 +58,7 @@ typings/
 .env
 
 # Build artifacts
-.tmp
+build
 
 # DS Store
 .DS_Store
