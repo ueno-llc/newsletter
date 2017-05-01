@@ -1,6 +1,6 @@
 .heading,
 .subheading {
-  font-family: 'Tisa Pro', Helvetica, Arial, sans-serif;
+  font-family: $font-tisa;
   font-size: 42px;
   line-height: 1.2;
   margin: 0;
@@ -13,8 +13,10 @@
 
 .heading {
   color: $color-black;
+  font-weight: $weight-thin;
 }
 
 .subheading {
   color: $color-light-gray;
+  font-weight: $weight-light;
 }
