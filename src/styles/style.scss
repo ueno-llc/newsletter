@@ -1,9 +1,17 @@
+// Non-CSS imports (variables, mixins, placeholder rules, etc.)
 @import 'abstracts/variables';
+
+// Vendor code
 @import 'node_modules/foundation-emails/scss/foundation-emails';
+
+// Base styles
 @import 'base/global';
 @import 'base/typography';
+
+// Layout styles
 @import 'layout/container';
-@import 'layout/wrapper';
+
+// Component styles
 @import 'components/divider';
 @import 'components/header';
 @import 'components/heading';
