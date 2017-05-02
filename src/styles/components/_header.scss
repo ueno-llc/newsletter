@@ -1,4 +1,11 @@
 .header {
+  &__date {
+    font-family: $font-akagi;
+    font-size: 15px;
+    color: $color-gray;
+    text-align: right;
+  }
+
   .columns {
     padding-top: 70px;
     padding-bottom: 60px;
