@@ -5,12 +5,18 @@ table.footer {
 .footer {
   p {
     font-size: 12px;
-    line-height: 1.3;
+    line-height: 0.5;
     color: $color-dark-gray;
     text-align: center;
   }
 
   a {
     text-decoration: underline;
+
+    &,
+    &:link,
+    &:visited {
+      color: $color-dark-gray;
+    }
   }
 }
