@@ -59,6 +59,7 @@ typings/
 
 # Build artifacts
 build
+dist
 
 # DS Store
 .DS_Store
