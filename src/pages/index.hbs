@@ -3,8 +3,8 @@ title: ueno. Newsletter
 ---
 
 {{#> section}}
-<container class="header narrow">
-  <row>
+<container>
+  <row class="header narrow">
     <columns small="6">
       <img src="images/ueno-logo.jpg" width="62" height="14" alt="ueno." class="header__logo">
     </columns>
@@ -12,26 +12,20 @@ title: ueno. Newsletter
       <p class="header__date">Friday, April 28, 2017</p>
     </columns>
   </row>
-</container>
 
-<container class="narrow">
-  <row>
+  <row class="narrow">
     <columns>
       <h1 class="heading">This is exciting.</h1>
       <p class="subheading">We're opening a new office in Los Angeles!</p>
       <spacer size="35">
     </columns>
   </row>
-</container>
 
-<container>
-  <wrapper>
+  <row class="collapse">
     <img src="images/office.jpg" class="image" width="600" height="348" alt="Photo of new ueno. office">
-  </wrapper>
-</container>
+  </row>
 
-<container class="narrow">
-  <row>
+  <row class="narrow">
     <columns>
       <spacer size="55">
       <p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, labore inventore consectetur, assumenda debitis quia! Aut, harum eius minus nostrum possimus voluptatem nulla, ipsam eveniet non sint quo officiis at!</p>
@@ -47,9 +41,7 @@ title: ueno. Newsletter
       <spacer size="20"></spacer>
     </columns>
   </row>
-</container>
 
-<container>
   <row>
     <columns small="6">
       <img class="portrait" src="images/jenny.jpg" width="240" height="304" alt="Jenny Johannesson">
@@ -58,10 +50,8 @@ title: ueno. Newsletter
       <img class="portrait" src="images/tawny.jpg" width="240" height="304" alt="Tawny Holguin">
     </columns>
   </row>
-</container>
 
-<container class="narrow">
-  <row>
+  <row class="narrow">
     <columns>
       {{> divider spacing='70' color='e5e5e5'}}
 
@@ -73,9 +63,7 @@ title: ueno. Newsletter
       {{#> link href='#'}}Read more{{/link}}
     </columns>
   </row>
-</container>
 
-<container>
   <row>
     <columns>
       <spacer size="60">
@@ -87,8 +75,8 @@ title: ueno. Newsletter
 {{/section}}
 
 {{#> section}}
-<container class="header narrow">
-  <row>
+<container>
+  <row class="header narrow">
     <columns small="6">
       <img src="images/ueno-store-logo.jpg" width="124" height="18" alt="ueno.store" class="header__logo">
     </columns>
@@ -96,32 +84,28 @@ title: ueno. Newsletter
       {{#> link href='http://ueno.store'}}Visit store{{/link}}
     </columns>
   </row>
-</container>
 
-<container>
-  <wrapper>
-    <img src="images/store/playing-cards.jpg" class="image" width="599" height="361" alt="Hand holding playing cards">
-  </wrapper>
-</container>
+  <row class="collapse">
+    <columns>
+      <img src="images/store/playing-cards.jpg" class="image" width="599" height="361" alt="Hand holding playing cards">
+    </columns>
+  </row>
 
-<container class="narrow">
-  <row>
+  <row class="narrow">
     <columns>
       <a href="#" class="title">MINIM Playing Cards &mdash; $10</a>
       <a href="#" class="subtitle">Areaware</a>
       <spacer size="80">
     </columns>
   </row>
-</container>
 
-<container>
-  <wrapper>
-    <img src="images/store/cat-socks.jpg" class="image" width="599" height="360" alt="Feet wearing cat-themed socks with stripes">
-  </wrapper>
-</container>
+  <row class="collapse">
+    <columns>
+      <img src="images/store/cat-socks.jpg" class="image" width="599" height="360" alt="Feet wearing cat-themed socks with stripes">
+    </columns>
+  </row>
 
-<container class="narrow">
-  <row>
+  <row class="narrow">
     <columns>
       <a href="#" class="title">Cat Socks &mdash; $8.99</a>
       <a href="#" class="subtitle">CoCozy</a>
@@ -132,8 +116,8 @@ title: ueno. Newsletter
 {{/section}}
 
 {{#> section}}
-<container class="header narrow">
-  <row>
+<container>
+  <row class="header narrow">
     <columns small="6">
       <img src="images/ueno-design-logo.jpg" width="124" height="18" alt="ueno.store" class="header__logo">
     </columns>
@@ -141,17 +125,13 @@ title: ueno. Newsletter
       {{#> link href='http://ueno.design'}}Visit website{{/link}}
     </columns>
   </row>
-</container>
 
-<container>
   <row>
     <columns>
       <spacer size="25">
     </columns>
   </row>
-</container>
 
-<container>
   <row>
     <columns small="6">
       {{#each (slice ueno_design.08_28 0 4)}}
@@ -164,9 +144,7 @@ title: ueno. Newsletter
       {{/each}}
     </columns>
   </row>
-</container>
 
-<container>
   <row>
     <columns>
       <spacer size="30">
