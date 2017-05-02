@@ -9,4 +9,17 @@
   &:visited {
     color: $color-black;
   }
+
+  &__caret {
+    display: inline;
+    width: 5px;
+    height: 9px;
+    vertical-align: middle;
+  }
+
+  &__text {
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+  }
 }

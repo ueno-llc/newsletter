@@ -35,7 +35,8 @@ title: ueno. Newsletter
     <columns>
       <spacer size="55">
       <p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, labore inventore consectetur, assumenda debitis quia! Aut, harum eius minus nostrum possimus voluptatem nulla, ipsam eveniet non sint quo officiis at!</p>
-      <a href="#" class="link">Read more</a>
+      <spacer size="20"></spacer>
+      {{#> link href='http://ueno.co'}}Read more{{/link}}
 
       {{> divider spacing='70' color='e5e5e5'}}
 
@@ -43,6 +44,7 @@ title: ueno. Newsletter
       <p class="subheading subheading--sub">Our new family members</p>
       <spacer size="35">
       <p class="body">We are stoked to announce Jenny Johannesson, Senior Designer and Tawny Holguin, Chief Operation Officer are joining the San Francisco team.</p>
+      <spacer size="20"></spacer>
     </columns>
   </row>
 </container>
@@ -67,7 +69,8 @@ title: ueno. Newsletter
       <p class="subheading subheading--sub">Uber.Design is now live!</p>
       <spacer size="35">
       <p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, fuga! Magnam laudantium ut enim, reiciendis asperiores est facilis assumenda tempore earum consequatur vitae iste, aut vero, repellendus quisquam, dolores. Suscipit?</p>
-      <a href="#" class="link">Read more</a>
+      <spacer size="20"></spacer>
+      {{#> link href='#'}}Read more{{/link}}
     </columns>
   </row>
 </container>
@@ -75,7 +78,9 @@ title: ueno. Newsletter
 <container>
   <row>
     <columns>
+      <spacer size="60">
       <img class="image" src="images/uber-design.jpg" alt="uber.design landing page">
+      <spacer size="22">
     </columns>
   </row>
 </container>
@@ -88,7 +93,7 @@ title: ueno. Newsletter
       <img src="images/ueno-store-logo.jpg" width="124" height="18" alt="ueno.store" class="header__logo">
     </columns>
     <columns small="6">
-      <a href="http://ueno.store" class="link">Visit store</a>
+      {{#> link href='http://ueno.store'}}Visit store{{/link}}
     </columns>
   </row>
 </container>
@@ -130,10 +135,18 @@ title: ueno. Newsletter
 <container class="header narrow">
   <row>
     <columns small="6">
-      <img src="images/ueno-store-logo.jpg" width="124" height="18" alt="ueno.store" class="header__logo">
+      <img src="images/ueno-design-logo.jpg" width="124" height="18" alt="ueno.store" class="header__logo">
     </columns>
     <columns small="6">
-      <a href="http://ueno.design" class="link">Visit website</a>
+      {{#> link href='http://ueno.design'}}Visit website{{/link}}
+    </columns>
+  </row>
+</container>
+
+<container>
+  <row>
+    <columns>
+      <spacer size="25">
     </columns>
   </row>
 </container>
@@ -149,6 +162,14 @@ title: ueno. Newsletter
       {{#each (slice ueno_design.08_28 4)}}
         {{> store-item this}}
       {{/each}}
+    </columns>
+  </row>
+</container>
+
+<container>
+  <row>
+    <columns>
+      <spacer size="30">
     </columns>
   </row>
 </container>
