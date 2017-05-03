@@ -1,11 +1,42 @@
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+$url-tisa: 'https://s3.amazonaws.com/ueno-fonts/tisa-pro/TisaPro-';
+$url-akagi: 'https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-';
+
+@font-face {
+  font-family: TisaPro;
+  font-weight: $weight-tisa-thin;
+  font-style: normal;
+  src: url('#{$url-tisa}Thin.eot');
+  src: url('#{$url-tisa}Thin.eot?#iefix') format('embedded-opentype'), url('#{$url-tisa}Thin.woff2') format('woff2'), url('#{$url-tisa}Thin.woff') format('woff'), url('#{$url-tisa}Thin.ttf') format('truetype');
 }
 
-.body {
-  font-family: $font-akagi;
-  font-size: 18px;
-  line-height: 1.5;
-  color: $color-gray;
+@font-face {
+  font-family: TisaPro;
+  font-weight: $weight-tisa-light;
+  font-style: normal;
+  src: url('#{$url-tisa}Light.eot');
+  src: url('#{$url-tisa}Light.eot?#iefix') format('embedded-opentype'), url('#{$url-tisa}Light.woff2') format('woff2'), url('#{$url-tisa}Light.woff') format('woff'), url('#{$url-tisa}Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: AkagiPro;
+  font-weight: $weight-akagi-book;
+  font-style: normal;
+  src: url('#{$url-akagi}Book.eot');
+  src: url('#{$url-akagi}Book.eot?#iefix') format('embedded-opentype'), url('#{$url-akagi}Book.woff2') format('woff2'), url('#{$url-akagi}Book.woff') format('woff'), url('#{$url-akagi}Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: AkagiPro;
+  font-weight: $weight-akagi-medium;
+  font-style: normal;
+  src: url('#{$url-akagi}Medium.eot');
+  src: url('#{$url-akagi}Medium.eot?#iefix') format('embedded-opentype'), url('#{$url-akagi}Medium.woff2') format('woff2'), url('#{$url-akagi}Medium.woff') format('woff'), url('#{$url-akagi}Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: AkagiPro;
+  font-weight: $weight-akagi-bold;
+  font-style: normal;
+  src: url('#{$url-akagi}Bold.eot');
+  src: url('#{$url-akagi}Bold.eot?#iefix') format('embedded-opentype'), url('#{$url-akagi}Bold.woff2') format('woff2'), url('#{$url-akagi}Bold.woff') format('woff'), url('#{$url-akagi}Bold.ttf') format('truetype');
 }

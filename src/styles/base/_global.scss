@@ -1,3 +1,15 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.body {
+  font-family: $font-akagi;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $color-gray;
+}
+
 .portrait,
 .image {
   width: 100%;
