@@ -1,6 +1,7 @@
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
 }
 
 .body {
@@ -13,4 +14,8 @@
 .portrait,
 .image {
   width: 100%;
+}
+
+.no-color {
+  color: $color-gray !important;
 }
