@@ -11,6 +11,47 @@
     <title>{{ title }}</title>
   </head>
   <body>
+    <style type="text/css">
+      @font-face {
+        font-family: TisaPro;
+        font-weight: 200;
+        font-style: normal;
+        src: url('https://s3.amazonaws.com/ueno-fonts/tisa-pro/TisaOT-Thin.eot');
+        src: url('https://s3.amazonaws.com/ueno-fonts/tisa-pro/TisaOT-Thin.eot?#iefix') format('embedded-opentype'), url('https://s3.amazonaws.com/ueno-fonts/tisa-pro/TisaOT-Thin.woff2') format('woff2'), url('https://s3.amazonaws.com/ueno-fonts/tisa-pro/TisaOT-Thin.woff') format('woff'), url('https://s3.amazonaws.com/ueno-fonts/tisa-pro/TisaOT-Thin.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: TisaPro;
+        font-weight: 300;
+        font-style: normal;
+        src: url('https://s3.amazonaws.com/ueno-fonts/tisa-pro/TisaPro-Light.eot');
+        src: url('https://s3.amazonaws.com/ueno-fonts/tisa-pro/TisaPro-Light.eot?#iefix') format('embedded-opentype'), url('https://s3.amazonaws.com/ueno-fonts/tisa-pro/TisaPro-Light.woff2') format('woff2'), url('https://s3.amazonaws.com/ueno-fonts/tisa-pro/TisaPro-Light.woff') format('woff'), url('https://s3.amazonaws.com/ueno-fonts/tisa-pro/TisaPro-Light.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: AkagiPro;
+        font-weight: 400;
+        font-style: normal;
+        src: url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Book.eot');
+        src: url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Book.eot?#iefix') format('embedded-opentype'), url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Book.woff2') format('woff2'), url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Book.woff') format('woff'), url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Book.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: AkagiPro;
+        font-weight: 500;
+        font-style: normal;
+        src: url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Medium.eot');
+        src: url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Medium.eot?#iefix') format('embedded-opentype'), url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Medium.woff2') format('woff2'), url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Medium.woff') format('woff'), url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Medium.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: AkagiPro;
+        font-weight: 700;
+        font-style: normal;
+        src: url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Bold.eot');
+        src: url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Bold.eot?#iefix') format('embedded-opentype'), url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Bold.woff2') format('woff2'), url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Bold.woff') format('woff'), url('https://s3.amazonaws.com/ueno-fonts/akagi-pro/AkagiPro-Bold.ttf') format('truetype');
+      }
+    </style>
     {{> body}}
     {{> footer}}
     <!-- prevent Gmail on iOS font size manipulation -->
