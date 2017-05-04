@@ -9,9 +9,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width">
     <title>{{ title }}</title>
-    {{> fonts}}
   </head>
   <body>
+    {{> fonts}}
+    <!--[if mso]>
+      <style type=”text/css”>
+        .heading,
+        .subheading,
+        .title,
+        .subtitle,
+        .body,
+        .link {
+          font-family: Helvetica, Arial, sans-serif !important;
+        }
+      </style>
+    <![endif]-->
     {{> body}}
     {{> footer}}
     <!-- prevent Gmail on iOS font size manipulation -->
