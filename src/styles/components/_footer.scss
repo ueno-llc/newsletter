@@ -3,9 +3,13 @@ table.footer {
 }
 
 .footer {
+  .no-color {
+    color: $color-dark-gray !important;
+  }
+
   p {
     font-size: 12px;
-    line-height: 0.5;
+    line-height: 6px;
     color: $color-dark-gray;
     text-align: center;
   }

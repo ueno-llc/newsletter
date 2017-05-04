@@ -7,15 +7,11 @@
 .body {
   font-family: $font-akagi;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 27px;
   color: $color-gray;
 }
 
 .portrait,
 .image {
   width: 100%;
-}
-
-.no-color {
-  color: $color-gray !important;
 }
