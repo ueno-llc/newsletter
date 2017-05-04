@@ -1,25 +1,31 @@
 .title,
 .subtitle {
-  font-family: $font-akagi;
-
+  &,
   a {
-    color: inherit;
-    font-family: inherit;
+    font-family: $font-akagi;
   }
 }
 
 .title {
   font-size: 18px;
-  color: $black;
   display: block;
   margin-bottom: 5px;
   Margin-bottom: 5px;
+
+  &,
+  a {
+    color: $black;
+  }
 }
 
 .subtitle {
   font-size: 15px;
-  color: $color-dark-gray;
   display: block;
   margin-bottom: 0;
   Margin-bottom: 0;
+
+  &,
+  a {
+    color: $color-dark-gray;
+  }
 }
