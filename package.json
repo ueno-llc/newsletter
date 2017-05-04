@@ -40,9 +40,9 @@
     "npm-run-all": "^4.0.2",
     "onchange": "^3.2.1",
     "panini": "^2.0.0-alpha.2",
-    "pug": "^2.0.0-beta.12",
+    "pug": "^2.0.0-rc.1",
     "rimraf": "^2.6.1",
-    "scow": "^1.0.1"
+    "scow": "^2.0.0"
   },
   "dependencies": {
     "foundation-emails": "^2.2.1"
