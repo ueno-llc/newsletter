@@ -9,7 +9,7 @@
     "watch-emails": "onchange 'src/**/*.{hbs,yml,js}' -i -- npm run compile-emails",
     "compile-emails": "run-s compile-emails:compile compile-emails:inky",
     "compile-emails:compile": "panini src build",
-    "compile-emails:inky": "inky build/*.html build",
+    "compile-emails:inky": "inky 'build/*.html' build",
     "watch-assets": "onchange 'src/assets/**/*' -i -- npm run assets",
     "assets": "cpy '**/*.*' '../../build' --cwd=src/assets --parents",
     "sass": "node-sass --include-path=. -o=build src/styles",
