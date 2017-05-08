@@ -132,18 +132,7 @@ title: ueno. Newsletter
     </columns>
   </row>
 
-  <row>
-    <columns small="6">
-      {{#each (slice ueno_design.08_28 0 4)}}
-        {{> store-item this}}
-      {{/each}}
-    </columns>
-    <columns small="6">
-      {{#each (slice ueno_design.08_28 4)}}
-        {{> store-item this}}
-      {{/each}}
-    </columns>
-  </row>
+  {{> store-gallery ueno_design.08_28 }}
 
   <row>
     <columns>

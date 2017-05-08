@@ -1,0 +1,22 @@
+{{#*inline 'store-item'}}
+  <a class="store-item" href="{{link}}">
+    <img src="images/{{image}}.jpg" width="240">
+    <spacer size="20">
+    <p class="title">{{type}}</p>
+    <p class="subtitle">Posted by {{posted_by}}</p>
+    <spacer size="60">
+  </a>
+{{/inline}}
+
+<row>
+  <columns small="6">
+    {{#each (slice this 0 4)}}
+      {{> store-item this}}
+    {{/each}}
+  </columns>
+  <columns small="6">
+    {{#each (slice this 4)}}
+      {{> store-item this}}
+    {{/each}}
+  </columns>
+</row>
