@@ -1,0 +1,159 @@
+---
+title: ueno. Newsletter May 10, 2017
+imagePath: images/newsletter-170510
+footerPhrase: talking about pugs
+---
+
+{{#> section}}
+<container>
+  <row class="header narrow">
+    <columns small="6">
+      <img src="images/ueno-logo.jpg" width="62" height="14" alt="ueno." class="header__logo">
+    </columns>
+    <columns small="6">
+      <p class="header__date">Wednesday, May 10, 2017</p>
+    </columns>
+  </row>
+
+  <row class="narrow">
+    <columns>
+      <h1 class="heading">This is exciting</h1>
+      <p class="subheading">The very first edition of the Ueno newsletter is here</p>
+      <spacer size="32">
+    </columns>
+  </row>
+
+  <row class="collapse">
+    <img src="{{imagePath}}/intro.jpg" class="image" width="600" height="348" alt="Hand inside mailbox holding out letter">
+  </row>
+
+  <row class="narrow">
+    <columns>
+      <spacer size="55">
+      <p class="body">You know the drill. It’s a newsletter, with news, about Ueno. If you don’t unsubscribe you can expect to get this in your inbox every two weeks. That’s it really.</p>
+      <p class="body">It will be full of good words, pictures and occasional references to pugs, all surrounded by lovely white space. You will like it. Probably. Maybe.</p>
+
+      {{> divider spacing='70' color='e5e5e5'}}
+
+      <h2 class="heading heading--sub">La, la lueno</h2>
+      <p class="subheading subheading--sub">Ueno LA opens</p>
+      <spacer size="32">
+      <p class="body">We are opening up our doors in Los Angeles this month and announcing our first hire. Find out more in our brand new Medium post.</p>
+      <spacer size="20"></spacer>
+      {{#> link href='https://medium.com/ueno/everything-you-never-wanted-to-know-about-ueno-fe52d940f56e'}}Read more about Ueno LA{{/link}}
+    </columns>
+  </row>
+
+  <row>
+    <columns>
+      <spacer size="60">
+      <img class="image" src="{{imagePath}}/office.jpg" alt="Ueno's Los Angeles office">
+      <spacer size="22">
+    </columns>
+  </row>
+
+  <row class="narrow">
+    <columns>
+      {{> divider spacing='70' color='e5e5e5'}}
+
+      <h1 class="heading heading--sub">Dynamic Duo</h1>
+      <p class="subheading subheading--sub">Jenny and Robbin at Awwwards</p>
+      <spacer size="32">
+      <p class="body">Ok, listen up. Jenny and Robbin will be saying clever things at the Awwwards Conference in Los Angeles on June 2, so there’s that.</p>
+      <spacer size="20"></spacer>
+      {{#> link href='https://conference.awwwards.com/speakers'}}Awwwards Conference{{/link}}
+    </columns>
+  </row>
+
+  <row>
+    <columns>
+      <spacer size="60">
+      <img class="image" src="{{imagePath}}/jenny-and-robbin.jpg" alt="uber.design landing page">
+      <spacer size="22">
+    </columns>
+  </row>
+</container>
+{{/section}}
+
+{{#> section}}
+<container>
+  <row class="header narrow">
+    <columns small="6">
+      <img src="images/ueno-store-logo.jpg" width="124" height="18" alt="ueno.store" class="header__logo">
+    </columns>
+    <columns small="6">
+      {{#> link href='http://ueno.store'}}Visit store{{/link}}
+    </columns>
+  </row>
+
+  <row class="collapse">
+    <columns>
+      <a href="https://ueno.store/product/minim-playing-cards">
+        <img src="{{imagePath}}/store-cards.jpg" class="image" width="599" height="361" alt="Hand holding playing cards">
+      </a>
+    </columns>
+  </row>
+
+  <row class="narrow">
+    <columns>
+      <p class="title"><a href="https://ueno.store/product/minim-playing-cards">MINIM Playing Cards &mdash; $10</a></p>
+      <p class="subtitle"><a href="https://ueno.store/product/minim-playing-cards">Areaware</a></p>
+      <spacer size="80">
+    </columns>
+  </row>
+
+  <row class="collapse">
+    <columns>
+      <a href="https://ueno.store/product/cat-socks">
+        <img src="{{imagePath}}/store-socks.jpg" class="image" width="599" height="360" alt="Feet wearing cat-themed socks with stripes">
+      </a>
+    </columns>
+  </row>
+
+  <row class="narrow">
+    <columns>
+      <p class="title"><a href="https://ueno.store/product/cat-socks">Cat Socks &mdash; $8.99</a></p>
+      <p class="subtitle"><a href="https://ueno.store/product/cat-socks">CoCozy</a></p>
+      <spacer size="100">
+    </columns>
+  </row>
+</container>
+{{/section}}
+
+{{#> section}}
+<container>
+  <row class="header narrow">
+    <columns small="6">
+      <img src="images/ueno-design-logo.jpg" width="139" height="24" alt="ueno.store" class="header__logo">
+    </columns>
+    <columns small="6">
+      {{#> link href='http://ueno.design'}}Visit website{{/link}}
+    </columns>
+  </row>
+
+  <row>
+    <columns>
+      <spacer size="25">
+    </columns>
+  </row>
+
+  <row>
+    <columns small="6">
+      {{#each (slice ueno_design.08_28 0 4)}}
+        {{> store-item this}}
+      {{/each}}
+    </columns>
+    <columns small="6">
+      {{#each (slice ueno_design.08_28 4)}}
+        {{> store-item this}}
+      {{/each}}
+    </columns>
+  </row>
+
+  <row>
+    <columns>
+      <spacer size="30">
+    </columns>
+  </row>
+</container>
+{{/section}}

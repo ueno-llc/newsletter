@@ -1,41 +1,41 @@
 08_28:
   -
-    image: egg
-    type: Photography
-    posted_by: Jenny
-    link: /
-  -
-    image: bird
-    type: Graphic Design
-    posted_by: Romain
-    link: /
-  -
-    image: people
-    type: Illustration
+    image: newsletter-170510/design-1
+    type: Gadgets
     posted_by: Haraldur
-    link: /
+    link: http://ueno.design/gadgets
   -
-    image: kurva
-    type: Branding
-    posted_by: Robbin
-    link: /
+    image: newsletter-170510/design-2
+    type: Illustration
+    posted_by: Justine
+    link: http://ueno.design/illustration
   -
-    image: rings
+    image: newsletter-170510/design-3
+    type: Architecture
+    posted_by: Haraldur
+    link: http://ueno.design/architecture
+  -
+    image: newsletter-170510/design-8
+    type: Physical Objects
+    posted_by: Andrea
+    link: http://ueno.design/physical-objects
+  -
+    image: newsletter-170510/design-5
     type: Art
-    posted_by: Carolyn
-    link: /
+    posted_by: Jenny
+    link: http://ueno.design/art
   -
-    image: phone
+    image: newsletter-170510/design-6
     type: Art
     posted_by: Robin
-    link: /
+    link: http://ueno.design/art
   -
-    image: triathalon
-    type: Illustration
+    image: newsletter-170510/design-7
+    type: Physical Objects
     posted_by: Romain
-    link: /
+    link: http://ueno.design/physical-objects
   -
-    image: cafe
+    image: newsletter-170510/design-4
     type: Branding
-    posted_by: Robbin
-    link: /
+    posted_by: Carolyn
+    link: http://ueno.design/branding
