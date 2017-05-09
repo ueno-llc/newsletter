@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run clean && run-p watch-emails watch-sass watch-assets server",
     "build": "run-s clean compile-emails sass assets inline",
+    "postbuild": "opn dist",
     "watch-emails": "onchange 'src/**/*.{hbs,yml,js}' -i -- npm run compile-emails",
     "compile-emails": "run-s compile-emails:compile compile-emails:inky",
     "compile-emails:compile": "panini src build",
@@ -39,6 +40,7 @@
     "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
     "onchange": "^3.2.1",
+    "opn-cli": "^3.1.0",
     "panini": "^2.0.0-alpha.2",
     "pug": "^2.0.0-rc.1",
     "rimraf": "^2.6.1",
