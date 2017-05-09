@@ -9,6 +9,11 @@
   .columns {
     padding-top: 70px;
     padding-bottom: 60px;
+
+    @include on-mobile {
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
   }
 
   .last th {

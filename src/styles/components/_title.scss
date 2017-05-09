@@ -12,6 +12,12 @@
   margin-bottom: 5px;
   Margin-bottom: 5px;
 
+  @include on-mobile {
+    font-size: 16px;
+    margin-bottom: 4px;
+    Margin-bottom: 4px;
+  }
+
   &,
   a {
     color: $black;
@@ -23,6 +29,10 @@
   display: block;
   margin-bottom: 0;
   Margin-bottom: 0;
+
+  @include on-mobile {
+    font-size: 14px;
+  }
 
   &,
   a {

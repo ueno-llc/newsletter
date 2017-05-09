@@ -1,3 +1,10 @@
+@include on-mobile {
+  th.columns.columns {
+    padding-left: $global-gutter / 2 !important;
+    padding-right: $global-gutter / 2 !important;
+  }
+}
+
 .narrow {
   .columns.first {
     padding-left: $global-gutter * 2;
@@ -5,15 +12,5 @@
 
   .columns.last {
     padding-right: $global-gutter * 2;
-  }
-
-  @include on-mobile {
-    .columns.first {
-      padding-left: $global-gutter / 2 !important;
-    }
-
-    .columns.last {
-      padding-right: $global-gutter / 2 !important;
-    }
   }
 }
