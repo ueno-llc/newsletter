@@ -20,3 +20,12 @@
 .image {
   width: 100%;
 }
+
+@media screen and (max-width: 620px) {
+  .show-for-large {
+    display: none !important;
+    width: 0;
+    mso-hide: all;
+    overflow: hidden;
+  }
+}
