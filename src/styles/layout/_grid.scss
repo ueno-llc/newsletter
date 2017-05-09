@@ -6,4 +6,14 @@
   .columns.last {
     padding-right: $global-gutter * 2;
   }
+
+  @include on-mobile {
+    .columns.first {
+      padding-left: $global-gutter / 2 !important;
+    }
+
+    .columns.last {
+      padding-right: $global-gutter / 2 !important;
+    }
+  }
 }

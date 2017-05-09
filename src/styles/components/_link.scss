@@ -10,7 +10,7 @@
     color: $color-black;
   }
 
-  &__caret {
+  .body &__caret {
     display: inline;
     width: 5px;
     height: 9px;
@@ -18,7 +18,7 @@
   }
 
   &__text {
-    vertical-align: middle;
+    vertical-align: text-top;
     position: relative;
     top: 1px;
   }
