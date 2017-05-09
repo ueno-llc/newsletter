@@ -16,6 +16,16 @@ p.body {
   }
 }
 
+.container {
+  margin-top: $global-gutter !important;
+  Margin-top: $global-gutter !important;
+
+  @include on-mobile {
+    margin-top: 0 !important;
+    Margin-top: 0 !important;
+  }
+}
+
 .portrait,
 .image {
   width: 100%;
