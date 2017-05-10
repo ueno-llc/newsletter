@@ -3,7 +3,16 @@
 @import 'abstracts/mixins';
 
 // Vendor code
-@import 'node_modules/foundation-emails/scss/foundation-emails';
+@import 'node_modules/foundation-emails/scss/util/util';
+@import 'node_modules/foundation-emails/scss/global';
+@import 'node_modules/foundation-emails/scss/components/normalize';
+@import 'node_modules/foundation-emails/scss/grid/grid';
+@import 'node_modules/foundation-emails/scss/components/alignment';
+@import 'node_modules/foundation-emails/scss/components/visibility';
+@import 'node_modules/foundation-emails/scss/components/typography';
+@import 'node_modules/foundation-emails/scss/components/menu';
+@import 'node_modules/foundation-emails/scss/components/outlook-first';
+@import 'node_modules/foundation-emails/scss/components/media-query';
 
 // Base styles
 @import 'base/global';
