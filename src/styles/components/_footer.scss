@@ -8,6 +8,7 @@ table.footer {
   }
 
   p {
+    @include antialias;
     font-size: 12px;
     line-height: 20px;
     color: $color-dark-gray;

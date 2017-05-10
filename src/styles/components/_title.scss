@@ -7,6 +7,7 @@
 }
 
 .title {
+  @include antialias;
   font-size: 18px;
   display: block;
   margin-bottom: 5px;
@@ -25,6 +26,7 @@
 }
 
 .subtitle {
+  @include antialias;
   font-size: 15px;
   display: block;
   margin-bottom: 0;

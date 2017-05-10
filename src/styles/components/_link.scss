@@ -13,6 +13,7 @@
   }
 
   &__text {
+    @include antialias;
     display: block;
     vertical-align: text-top;
     position: relative;

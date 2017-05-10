@@ -1,10 +1,5 @@
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-}
-
 p.body {
+  @include antialias;
   font-family: $font-akagi;
   font-size: 18px;
   line-height: 27px;
