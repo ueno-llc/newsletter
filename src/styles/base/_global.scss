@@ -11,8 +11,8 @@ p.body {
   color: $color-gray;
 
   @include on-mobile {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
