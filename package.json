@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run clean && run-p watch-emails watch-sass watch-assets server",
+    "prebuild": "rimraf dist",
     "build": "run-s clean compile-emails sass assets inline",
     "postbuild": "opn dist",
     "watch-emails": "onchange 'src/**/*.{hbs,yml,js}' -i -- npm run compile-emails",
