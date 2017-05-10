@@ -15,7 +15,7 @@
     "assets": "cpy '**/*.*' '../../build' --cwd=src/assets --parents",
     "sass": "node-sass --include-path=. -o=build src/styles",
     "watch-sass": "npm run sass && npm run sass -- --watch",
-    "inline": "scow build/**/*.html dist",
+    "inline": "scow 'build/**/*.html' dist -c",
     "clean": "rimraf build && mkdir build",
     "server": "cd build && lite-server",
     "test": "mocha"
@@ -44,7 +44,7 @@
     "panini": "^2.0.0-alpha.2",
     "pug": "^2.0.0-rc.1",
     "rimraf": "^2.6.1",
-    "scow": "^3.0.0"
+    "scow": "^4.0.0-alpha.1"
   },
   "dependencies": {
     "foundation-emails": "^2.2.1"
