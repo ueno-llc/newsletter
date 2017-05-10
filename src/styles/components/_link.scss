@@ -1,25 +1,31 @@
 .link {
-  font-family: $font-akagi;
-  font-size: 14px;
-  font-weight: bold;
-
-  &,
-  &:link,
-  &:hover,
-  &:visited {
-    color: $color-black;
-  }
-
-  .body &__caret {
-    display: inline;
-    width: 5px;
-    height: 9px;
+  &__caret {
     vertical-align: middle;
   }
 
+  .body &__caret__image {
+    display: block;
+    width: 5px;
+    height: 9px;
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+  }
+
   &__text {
+    display: block;
     vertical-align: text-top;
     position: relative;
     top: 1px;
+
+    &,
+    &:link,
+    &:hover,
+    &:visited {
+      font-weight: bold;
+      font-family: $font-akagi;
+      font-size: 14px;
+      color: $color-black;
+    }
   }
 }
