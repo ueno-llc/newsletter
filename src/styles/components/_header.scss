@@ -1,4 +1,19 @@
 .header {
+  .body &__logo {
+    width: 62px;
+    height: 14px;
+
+    &--store {
+      width: 124px;
+      height: 18px;
+    }
+
+    &--design {
+      width: 139px;
+      height: 24px;
+    }
+  }
+
   &__date {
     font-family: $font-akagi;
     font-size: 15px;
@@ -18,5 +33,15 @@
 
   .last th {
     text-align: right;
+  }
+
+  @include on-mobile {
+    &.row .columns.first {
+      padding-right: 0 !important;
+    }
+
+    &.row .columns.last {
+      padding-left: 0 !important;
+    }
   }
 }
