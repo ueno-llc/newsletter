@@ -1,11 +1,11 @@
 .store-gallery {
   @include on-mobile {
-    th.columns.first {
+    &.row th.columns.first {
       padding-left: $global-gutter / 2 !important;
       padding-right: $global-gutter / 4 !important;
     }
 
-    th.columns.last {
+    &.row th.columns.last {
       padding-left: $global-gutter / 4 !important;
       padding-right: $global-gutter / 2 !important;
     }
