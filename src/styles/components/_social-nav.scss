@@ -1,3 +1,9 @@
+.social-nav {
+  @include on-mobile {
+    width: auto !important;
+  }
+}
+
 table.menu th.social-nav__item {
   vertical-align: middle;
   padding-left: 15px;
