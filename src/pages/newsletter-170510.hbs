@@ -5,6 +5,16 @@ imagePath: images/newsletter-170510
 footerPhrase: talking about pugs
 ---
 
+{{#* inline 'style'}}
+  <style>
+    @media screen and (max-width: 620px) {
+      .store-item-2 .subtitle {
+        margin-bottom: 50px !important;
+      }
+    }
+  </style>
+{{/inline}}
+
 {{#> section}}
   <row class="header narrow">
     <columns small="4">
@@ -93,8 +103,7 @@ footerPhrase: talking about pugs
   <row class="narrow">
     <columns>
       <p class="title"><a href="https://ueno.store/product/minim-playing-cards">MINIM Playing Cards &mdash; $10</a></p>
-      <p class="subtitle"><a href="https://ueno.store/product/minim-playing-cards">Areaware</a></p>
-      <spacer size="80">
+      <p class="subtitle" style="margin-bottom: 80px; Margin-bottom: 80px;"><a href="https://ueno.store/product/minim-playing-cards">Areaware</a></p>
     </columns>
   </row>
 
@@ -106,11 +115,10 @@ footerPhrase: talking about pugs
     </columns>
   </row>
 
-  <row class="narrow">
+  <row class="narrow store-item-2">
     <columns>
       <p class="title"><a href="https://ueno.store/product/cat-socks">Cat Socks &mdash; $8.99</a></p>
-      <p class="subtitle"><a href="https://ueno.store/product/cat-socks">CoCozy</a></p>
-      <spacer size-sm="50" size-lg="100">
+      <p class="subtitle" style="margin-bottom: 100px; Margin-bottom: 100px;"><a href="https://ueno.store/product/cat-socks">CoCozy</a></p>
     </columns>
   </row>
 {{/section}}
@@ -125,17 +133,5 @@ footerPhrase: talking about pugs
     </columns>
   </row>
 
-  <row>
-    <columns>
-      <spacer size="25">
-    </columns>
-  </row>
-
   {{> design-gallery items=ueno_design.08_28 split=3 }}
-
-  <row>
-    <columns>
-      <spacer size-sm="0" size-lg="30">
-    </columns>
-  </row>
 {{/section}}

@@ -1,5 +1,13 @@
 .design-gallery {
+  margin-top: 25px;
+  Margin-top: 25px;
+  margin-bottom: 30px;
+  Margin-bottom: 30px;
+
   @include on-mobile {
+    margin-bottom: 0px !important;
+    Margin-bottom: 0px !important;
+
     &.row th.columns.first {
       padding-left: $global-gutter / 2 !important;
       padding-right: $global-gutter / 4 !important;
