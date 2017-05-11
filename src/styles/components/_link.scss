@@ -1,36 +1,28 @@
 .link {
-  &__caret {
-    vertical-align: middle;
+  font-family: $font-akagi;
+  font-size: 16px;
+  font-weight: bold;
+
+  @include on-mobile {
+    font-size: 14px;
   }
 
-  .body &__caret__image {
-    display: block;
+  &,
+  &:link,
+  &:hover,
+  &:visited {
+    color: $color-black;
+  }
+
+  .body &__caret {
+    display: inline;
     width: 5px;
     height: 9px;
-    vertical-align: middle;
-    position: relative;
-    top: 1px;
   }
 
   &__text {
     @include antialias;
-    display: block;
-    vertical-align: text-top;
     position: relative;
     top: 1px;
-
-    &,
-    &:link,
-    &:hover,
-    &:visited {
-      font-weight: bold;
-      font-family: $font-akagi;
-      font-size: 16px;
-      color: $color-black;
-
-      @include on-mobile {
-        font-size: 14px !important;
-      }
-    }
   }
 }

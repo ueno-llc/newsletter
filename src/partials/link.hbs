@@ -1,16 +1,7 @@
-<table class="link">
-  <tbody>
-    <tr>
-      <td width="18" valign="top" class="link__caret">
-        <a href="{{href}}">
-          <img class="link__caret__image" src="images/caret.jpg" width="5" height="9" alt="">
-        </a>
-      </td>
-      <td valign="top">
-        <a href="{{href}}" class="link__text">
-          {{> @partial-block}}
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<a href="{{ href }}" class="link">
+  <img class="link__caret" src="images/caret.jpg" width="5" height="9" alt="">
+  &nbsp;
+  <span class="link__text">
+    {{> @partial-block}}
+  </span>
+</a>
