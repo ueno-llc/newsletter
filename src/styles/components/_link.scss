@@ -4,7 +4,7 @@
   font-weight: bold;
 
   @include on-mobile {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   &,
