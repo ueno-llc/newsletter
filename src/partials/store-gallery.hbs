@@ -10,12 +10,12 @@
 
 <row class="store-gallery">
   <columns small="6">
-    {{#each (slice this 0 4)}}
+    {{#each (slice items 0 split)}}
       {{> store-item this}}
     {{/each}}
   </columns>
   <columns small="6">
-    {{#each (slice this 4)}}
+    {{#each (slice items split)}}
       {{> store-item this}}
     {{/each}}
   </columns>

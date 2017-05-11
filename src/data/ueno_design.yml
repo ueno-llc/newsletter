@@ -14,16 +14,11 @@
     type: Architecture
     posted_by: Haraldur
     link: http://ueno.design/architecture
-  -
-    image: newsletter-170510/design-8
-    type: Physical Objects
-    posted_by: Andrea
-    link: http://ueno.design/physical-objects
-  -
-    image: newsletter-170510/design-5
-    type: Art
-    posted_by: Jenny
-    link: http://ueno.design/art
+  # -
+  #   image: newsletter-170510/design-8
+  #   type: Physical Objects
+  #   posted_by: Andrea
+  #   link: http://ueno.design/physical-objects
   -
     image: newsletter-170510/design-6
     type: Art
@@ -35,7 +30,12 @@
     posted_by: Romain
     link: http://ueno.design/physical-objects
   -
-    image: newsletter-170510/design-4
-    type: Branding
-    posted_by: Carolyn
-    link: http://ueno.design/branding
+    image: newsletter-170510/design-5
+    type: Art
+    posted_by: Jenny
+    link: http://ueno.design/art
+  # -
+  #   image: newsletter-170510/design-4
+  #   type: Branding
+  #   posted_by: Carolyn
+  #   link: http://ueno.design/branding
