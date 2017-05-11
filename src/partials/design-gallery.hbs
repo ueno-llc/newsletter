@@ -1,5 +1,5 @@
-{{#*inline 'store-item'}}
-  <a class="store-item" href="{{link}}">
+{{#*inline 'gallery-item'}}
+  <a class="design-gallery__item" href="{{link}}">
     <img src="images/{{image}}.jpg" width="240">
     <spacer size="20">
     <p class="title">{{type}}</p>
@@ -8,15 +8,15 @@
   </a>
 {{/inline}}
 
-<row class="store-gallery">
+<row class="design-gallery">
   <columns small="6">
     {{#each (slice items 0 split)}}
-      {{> store-item this}}
+      {{> gallery-item this}}
     {{/each}}
   </columns>
   <columns small="6">
     {{#each (slice items split)}}
-      {{> store-item this}}
+      {{> gallery-item this}}
     {{/each}}
   </columns>
 </row>

@@ -1,4 +1,4 @@
-.store-gallery {
+.design-gallery {
   @include on-mobile {
     &.row th.columns.first {
       padding-left: $global-gutter / 2 !important;
@@ -10,4 +10,14 @@
       padding-right: $global-gutter / 2 !important;
     }
   }
+
+  &__item {
+    display: block;
+
+    p {
+      text-align: center;
+      clear: both;
+    }
+  }
+
 }
