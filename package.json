@@ -45,7 +45,7 @@
     "panini": "^2.0.0-alpha.2",
     "pug": "^2.0.0-rc.1",
     "rimraf": "^2.6.1",
-    "scow": "^4.0.0-alpha.1"
+    "scow": "^4.0.0-alpha.2"
   },
   "dependencies": {
     "foundation-emails": "^2.2.1"
