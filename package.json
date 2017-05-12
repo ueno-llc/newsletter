@@ -18,7 +18,7 @@
     "watch-sass": "npm run sass && npm run sass -- --watch",
     "inline": "scow 'build/**/*.html' dist",
     "clean": "rimraf build && mkdir build",
-    "server": "cd build && lite-server",
+    "server": "lite-server",
     "test": "mocha"
   },
   "repository": {
