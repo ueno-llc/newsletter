@@ -1,0 +1,162 @@
+---
+title: ueno. Newsletter May 11, 2017
+date: Thursday, May 11, 2017
+description: The very first edition of the Ueno newsletter is here
+imagePath: images/newsletter-170510
+footerPhrase: talking about pugs
+---
+
+{{#* inline 'style'}}
+  <style>
+    .store-item-1 {
+      margin-bottom: 80px;
+      Margin-bottom: 80px;
+    }
+
+    .store-item-2 {
+      margin-bottom: 100px;
+      Margin-bottom: 100px;
+    }
+
+    .height-adjust {
+      height: 0;
+      margin-bottom: 100px;
+      Margin-bottom: 100px;
+    }
+
+    @media screen and (max-width: 620px) {
+      .store-item-2 {
+        margin-bottom: 50px !important;
+      }
+    }
+  </style>
+{{/inline}}
+
+{{#> section}}
+  <row class="narrow">
+    <columns>
+      <img src="{{imagePath}}/title-1.jpg" mc:edit="article_1_title" width="420" height="124" alt="This is exciting. The very first edition of the Ueno newsletter is here." class="image image--title" />
+    </columns>
+  </row>
+
+  <row class="collapse">
+    <columns>
+      <img src="{{imagePath}}/intro.jpg" mc:edit="article_1_image" class="image image--upper" width="580" height="348" alt="Hand inside mailbox holding out letter" />
+    </columns>
+  </row>
+
+  <row class="narrow">
+    <columns>
+      <div class="body-text" mc:edit="article_1_text">
+        <p>You know the drill. It’s a newsletter, with news, about Ueno. If you don’t unsubscribe you can expect to get this in your inbox every two weeks. That’s it really.</p>
+        <p>It will be full of good words, pictures and occasional references to pugs, all surrounded by lovely white space. You will like it. Probably. Maybe.</p>
+      </div>
+      {{#> link href='https://medium.com/ueno/everything-you-never-wanted-to-know-about-ueno-fe52d940f56e'}}
+        <span mc:edit="article_1_linktext">Read more about the Ueno newsletter</span>
+      {{/link}}
+      <p class="height-adjust">&nbsp;</p>
+
+      {{> divider }}
+
+      <img src="{{imagePath}}/title-2.jpg" mc:edit="article_2_title" class="image image--title" width="420" height="77" alt="La, la, lueno. Ueno LA opens." />
+      <div class="body-text" mc:edit="article_2_body">
+        <p>We are opening up our doors in Los Angeles this month and announcing our first hire. Find out more in our brand new Medium post.</p>
+      </div>
+      {{#> link href='https://medium.com/ueno/ueno-goes-to-la-7c8259dd2fec'}}
+        <span mc:edit="article_2_linktext">Read more about Ueno LA</span>
+      {{/link}}
+    </columns>
+  </row>
+
+  <row>
+    <columns>
+      <img class="image image--lower" mc:edit="article_2_image" src="{{imagePath}}/office.jpg" width="500" height="290" alt="Ueno's Los Angeles office" />
+    </columns>
+  </row>
+
+  <row class="narrow">
+    <columns>
+      {{> divider safeguard='true' }}
+      <img src="{{imagePath}}/title-3.jpg" mc:edit="article_3_title" width="420" height="77" alt="The dynamic duo. Jenny and Robbin at Awwwards." class="image image--title" />
+      <div class="body-text" mc:edit="article_3_text">
+        <p>Ok, listen up. Jenny and Robbin will be saying clever things at the Awwwards Conference in Los Angeles on June 2, so there’s that.</p>
+      </div>
+      {{#> link href='https://conference.awwwards.com/speakers'}}
+        <span mc:edit="article_3_linktext">Awwwards Conference</span>
+      {{/link}}
+    </columns>
+  </row>
+
+  <row>
+    <columns>
+      <img class="image image--lower" mc:edit="article_3_image" src="{{imagePath}}/jenny-and-robbin.jpg" width="500" height="366" alt="Jenny and Robbin standing side by side" />
+    </columns>
+  </row>
+{{/section}}
+
+{{#> section}}
+  {{> header-store}}
+
+  <row class="collapse">
+    <columns>
+      <a href="https://ueno.store/product/minim-playing-cards">
+        <img src="{{imagePath}}/store-cards.jpg" mc:edit="store_1_image" class="image" width="599" height="361" alt="Hand holding playing cards" />
+      </a>
+    </columns>
+  </row>
+
+  <row class="narrow store-item-1">
+    <columns>
+      <p class="title"><a href="https://ueno.store/product/minim-playing-cards">
+        <span mc:edit="store_1_name">MINIM Playing Cards &mdash; $10</span>
+      </a></p>
+      <p class="subtitle"><a href="https://ueno.store/product/minim-playing-cards">
+        <span mc:edit="store_1_seller">Areaware</span>
+      </a></p>
+    </columns>
+  </row>
+
+  <row class="collapse">
+    <columns>
+      <a href="https://ueno.store/product/cat-socks">
+        <img src="{{imagePath}}/store-socks.jpg" mc:edit="store_2_image" class="image" width="599" height="360" alt="Feet wearing cat-themed socks with stripes" />
+      </a>
+    </columns>
+  </row>
+
+  <row class="narrow store-item-2">
+    <columns>
+      <p class="title"><a href="https://ueno.store/product/cat-socks">
+        <span mc:edit="store_2_name">Cat Socks &mdash; $8.99</span>
+      </a></p>
+      <p class="subtitle"><a href="https://ueno.store/product/cat-socks">
+        <span mc:edit="store_2_seller">CoCozy</span>
+      </a></p>
+    </columns>
+  </row>
+{{/section}}
+
+{{#> section}}
+  {{> header-design}}
+
+  {{#*inline 'gallery-item'}}
+    <a class="design-gallery__item" href="#">
+      <img src="images/design-placeholder.jpg" mc:edit="design_{{n}}_image" class="design-gallery__item__image" width="240" />
+      <span class="title" mc:edit="design_{{n}}_category">Gadgets</span>
+      <span class="subtitle" mc:edit="design_{{n}}_postedby">Posted by Haraldur</span>
+    </a>
+  {{/inline}}
+
+  <row class="design-gallery">
+    <columns small="6">
+      {{> gallery-item n=1}}
+      {{> gallery-item n=2}}
+      {{> gallery-item n=3}}
+    </columns>
+    <columns small="6">
+      {{> gallery-item n=4}}
+      {{> gallery-item n=5}}
+      {{> gallery-item n=6}}
+    </columns>
+  </row>
+{{/section}}
