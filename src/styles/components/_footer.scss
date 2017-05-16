@@ -7,7 +7,7 @@ table.footer {
     padding-bottom: 10px;
 
     @include on-mobile {
-      padding-top: 52px;
+      padding-top: 52px !important;
       padding-bottom: 50px !important;
     }
   }
