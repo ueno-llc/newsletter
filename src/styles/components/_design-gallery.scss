@@ -21,11 +21,15 @@
 
   &__item {
     display: block;
+    padding-bottom: 60px;
+
+    &__image {
+      padding-bottom: 20px;
+    }
 
     p {
       text-align: center;
       clear: both;
     }
   }
-
 }

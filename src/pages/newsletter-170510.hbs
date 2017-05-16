@@ -8,8 +8,24 @@ footerPhrase: talking about pugs
 
 {{#* inline 'style'}}
   <style>
+    .store-item-1 {
+      margin-bottom: 80px;
+      Margin-bottom: 80px;
+    }
+
+    .store-item-2 {
+      margin-bottom: 100px;
+      Margin-bottom: 100px;
+    }
+
+    .height-adjust {
+      height: 0;
+      margin-bottom: 100px;
+      Margin-bottom: 100px;
+    }
+
     @media screen and (max-width: 620px) {
-      .store-item-2 .subtitle {
+      .store-item-2 {
         margin-bottom: 50px !important;
       }
     }
@@ -19,57 +35,55 @@ footerPhrase: talking about pugs
 {{#> section}}
   <row class="narrow">
     <columns>
-      <img src="{{imagePath}}/title-1.jpg" width="420" height="124" alt="This is exciting. The very first edition of the Ueno newsletter is here." class="image">
-      <spacer size="32">
+      <img src="{{imagePath}}/title-1.jpg" width="420" height="124" alt="This is exciting. The very first edition of the Ueno newsletter is here." class="image image--title">
     </columns>
   </row>
 
   <row class="collapse">
     <columns>
-      <img src="{{imagePath}}/intro.jpg" class="image" width="580" height="348" alt="Hand inside mailbox holding out letter">
+      <img src="{{imagePath}}/intro.jpg" class="image image--upper" width="580" height="348" alt="Hand inside mailbox holding out letter">
     </columns>
   </row>
 
   <row class="narrow">
     <columns>
-      <spacer size-sm="30" size-lg="55">
-      <p class="body">You know the drill. It’s a newsletter, with news, about Ueno. If you don’t unsubscribe you can expect to get this in your inbox every two weeks. That’s it really.</p>
-      <p class="body" style="margin-bottom: 30px; Margin-bottom: 30px;">It will be full of good words, pictures and occasional references to pugs, all surrounded by lovely white space. You will like it. Probably. Maybe.</p>
+      <div class="body-text">
+        <p>You know the drill. It’s a newsletter, with news, about Ueno. If you don’t unsubscribe you can expect to get this in your inbox every two weeks. That’s it really.</p>
+        <p>It will be full of good words, pictures and occasional references to pugs, all surrounded by lovely white space. You will like it. Probably. Maybe.</p>
+      </div>
       {{#> link href='https://medium.com/ueno/everything-you-never-wanted-to-know-about-ueno-fe52d940f56e'}}Read more about the Ueno newsletter{{/link}}
-      <p style="height: 0; margin-bottom: 100px;">&nbsp;</p>
+      <p class="height-adjust">&nbsp;</p>
 
       {{> divider }}
 
-      <img src="{{imagePath}}/title-2.jpg" width="420" height="77" alt="La, la, lueno. Ueno LA opens.">
-      <p class="body" style="margin-top: 32px; Margin-top: 32px; margin-bottom: 30px; Margin-bottom: 30px;">We are opening up our doors in Los Angeles this month and announcing our first hire. Find out more in our brand new Medium post.</p>
+      <img src="{{imagePath}}/title-2.jpg" class="image image--title" width="420" height="77" alt="La, la, lueno. Ueno LA opens.">
+      <div class="body-text">
+        <p>We are opening up our doors in Los Angeles this month and announcing our first hire. Find out more in our brand new Medium post.</p>
+      </div>
       {{#> link href='https://medium.com/ueno/ueno-goes-to-la-7c8259dd2fec'}}Read more about Ueno LA{{/link}}
     </columns>
   </row>
 
   <row>
     <columns>
-      <spacer size-sm="30" size-lg="60">
-      <img class="image" src="{{imagePath}}/office.jpg" width="500" height="290" alt="Ueno's Los Angeles office">
-      <spacer size-sm="0" size-lg="22">
+      <img class="image image--lower" src="{{imagePath}}/office.jpg" width="500" height="290" alt="Ueno's Los Angeles office">
     </columns>
   </row>
 
   <row class="narrow">
     <columns>
-      <p style="height: 0; margin-bottom: 0; Margin-bottom: 0;">&nbsp;</p>
-      {{> divider }}
-      <p style="height: 0; margin-bottom: 0; Margin-bottom: 0;">&nbsp;</p>
-      <img src="{{imagePath}}/title-3.jpg" width="420" height="77" alt="The dynamic duo. Jenny and Robbin at Awwwards.">
-      <p class="body" style="margin-top: 32px; Margin-top: 32px; margin-bottom: 30px; Margin-bottom: 30px;">Ok, listen up. Jenny and Robbin will be saying clever things at the Awwwards Conference in Los Angeles on June 2, so there’s that.</p>
+      {{> divider safeguard='true' }}
+      <img src="{{imagePath}}/title-3.jpg" width="420" height="77" alt="The dynamic duo. Jenny and Robbin at Awwwards." class="image image--title">
+      <div class="body-text">
+        <p>Ok, listen up. Jenny and Robbin will be saying clever things at the Awwwards Conference in Los Angeles on June 2, so there’s that.</p>
+      </div>
       {{#> link href='https://conference.awwwards.com/speakers'}}Awwwards Conference{{/link}}
     </columns>
   </row>
 
   <row>
     <columns>
-      <spacer size-sm="30" size-lg="60">
-      <img class="image" src="{{imagePath}}/jenny-and-robbin.jpg" width="500" height="366" alt="uber.design landing page">
-      <spacer size-sm="10" size-lg="22">
+      <img class="image image--lower" src="{{imagePath}}/jenny-and-robbin.jpg" width="500" height="366" alt="Jenny and Robbin standing side by side">
     </columns>
   </row>
 {{/section}}
@@ -85,10 +99,10 @@ footerPhrase: talking about pugs
     </columns>
   </row>
 
-  <row class="narrow">
+  <row class="narrow store-item-1">
     <columns>
       <p class="title"><a href="https://ueno.store/product/minim-playing-cards">MINIM Playing Cards &mdash; $10</a></p>
-      <p class="subtitle" style="margin-bottom: 80px; Margin-bottom: 80px;"><a href="https://ueno.store/product/minim-playing-cards">Areaware</a></p>
+      <p class="subtitle"><a href="https://ueno.store/product/minim-playing-cards">Areaware</a></p>
     </columns>
   </row>
 
@@ -103,7 +117,7 @@ footerPhrase: talking about pugs
   <row class="narrow store-item-2">
     <columns>
       <p class="title"><a href="https://ueno.store/product/cat-socks">Cat Socks &mdash; $8.99</a></p>
-      <p class="subtitle" style="margin-bottom: 100px; Margin-bottom: 100px;"><a href="https://ueno.store/product/cat-socks">CoCozy</a></p>
+      <p class="subtitle"><a href="https://ueno.store/product/cat-socks">CoCozy</a></p>
     </columns>
   </row>
 {{/section}}

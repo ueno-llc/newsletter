@@ -3,25 +3,38 @@ table.footer {
 }
 
 .footer {
+  &__content {
+    padding-bottom: 10px;
+
+    @include on-mobile {
+      padding-top: 52px;
+      padding-bottom: 50px !important;
+    }
+  }
+
+  &__text {
+    padding-top: 25px;
+
+    p {
+      @include antialias;
+      font-size: 12px;
+      line-height: 20px;
+      color: $color-dark-gray;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: underline;
+
+      &,
+      &:link,
+      &:visited {
+        color: $color-dark-gray;
+      }
+    }
+  }
+
   .no-color {
     color: $color-dark-gray !important;
-  }
-
-  p {
-    @include antialias;
-    font-size: 12px;
-    line-height: 20px;
-    color: $color-dark-gray;
-    text-align: center;
-  }
-
-  a {
-    text-decoration: underline;
-
-    &,
-    &:link,
-    &:visited {
-      color: $color-dark-gray;
-    }
   }
 }

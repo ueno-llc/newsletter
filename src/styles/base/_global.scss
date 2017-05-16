@@ -1,13 +1,18 @@
-p.body {
-  @include antialias;
-  font-family: $font-akagi;
-  font-size: 16px;
-  line-height: 27px;
-  color: $color-gray;
+.body-text {
+  margin-bottom: 30px;
+  Margin-bottom: 30px;
 
-  @include on-mobile {
-    font-size: 14px !important;
-    line-height: 21px !important;
+  p {
+    @include antialias;
+    font-family: $font-akagi;
+    font-size: 16px;
+    line-height: 27px;
+    color: $color-gray;
+
+    @include on-mobile {
+      font-size: 14px !important;
+      line-height: 21px !important;
+    }
   }
 }
 
@@ -21,9 +26,30 @@ p.body {
   }
 }
 
-.portrait,
 .image {
   width: 100%;
+
+  &--title {
+    padding-bottom: 32px;
+  }
+
+  &--upper {
+    padding-bottom: 55px;
+
+    @include on-mobile {
+      padding-bottom: 30px !important;
+    }
+  }
+
+  &--lower {
+    padding-top: 60px;
+    padding-bottom: 22px;
+
+    @include on-mobile {
+      padding-top: 30px !important;
+      padding-bottom: 10px !important;
+    }
+  }
 }
 
 @media screen and (max-width: 620px) {
