@@ -9,3 +9,25 @@ table.menu th.social-nav__item {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.menu img.social-nav__item__icon {
+  &--facebook {
+    width: 10px;
+  }
+
+  &--twitter {
+    width: 21px;
+  }
+
+  &--instagram {
+    width: 19px;
+  }
+
+  &--medium {
+    width: 21px;
+  }
+
+  &--dribbble {
+    width: 18px;
+  }
+}
