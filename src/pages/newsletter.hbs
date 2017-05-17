@@ -1,6 +1,6 @@
 ---
 title: ueno. Newsletter May 11, 2017
-date: Thursday, May 11, 2017
+date: *|DATE:l, F j, Y|*
 description: The very first edition of the Ueno newsletter is here
 imagePath: images/newsletter-170510
 footerPhrase: talking about pugs
@@ -51,7 +51,7 @@ footerPhrase: talking about pugs
         <p>You know the drill. It’s a newsletter, with news, about Ueno. If you don’t unsubscribe you can expect to get this in your inbox every two weeks. That’s it really.</p>
         <p>It will be full of good words, pictures and occasional references to pugs, all surrounded by lovely white space. You will like it. Probably. Maybe.</p>
       </div>
-      {{#> link href='https://medium.com/ueno/everything-you-never-wanted-to-know-about-ueno-fe52d940f56e'}}
+      {{#> link href='*|ARTICLE_1|*'}}
         <span mc:edit="article_1_linktext">Read more about the Ueno newsletter</span>
       {{/link}}
       <p class="height-adjust">&nbsp;</p>
@@ -62,7 +62,7 @@ footerPhrase: talking about pugs
       <div class="body-text" mc:edit="article_2_body">
         <p>We are opening up our doors in Los Angeles this month and announcing our first hire. Find out more in our brand new Medium post.</p>
       </div>
-      {{#> link href='https://medium.com/ueno/ueno-goes-to-la-7c8259dd2fec'}}
+      {{#> link href='*|ARTICLE_2|*'}}
         <span mc:edit="article_2_linktext">Read more about Ueno LA</span>
       {{/link}}
     </columns>
@@ -81,7 +81,7 @@ footerPhrase: talking about pugs
       <div class="body-text" mc:edit="article_3_text">
         <p>Ok, listen up. Jenny and Robbin will be saying clever things at the Awwwards Conference in Los Angeles on June 2, so there’s that.</p>
       </div>
-      {{#> link href='https://conference.awwwards.com/speakers'}}
+      {{#> link href='*|ARTICLE_3|*'}}
         <span mc:edit="article_3_linktext">Awwwards Conference</span>
       {{/link}}
     </columns>
@@ -99,7 +99,7 @@ footerPhrase: talking about pugs
 
   <row class="collapse">
     <columns>
-      <a href="https://ueno.store/product/minim-playing-cards">
+      <a href="*|STORE_1|*">
         <img src="{{imagePath}}/store-cards.jpg" mc:edit="store_1_image" class="image" width="599" height="361" alt="Hand holding playing cards" />
       </a>
     </columns>
@@ -107,10 +107,10 @@ footerPhrase: talking about pugs
 
   <row class="narrow store-item-1">
     <columns>
-      <p class="title"><a href="https://ueno.store/product/minim-playing-cards">
+      <p class="title"><a href="*|STORE_1|*">
         <span mc:edit="store_1_name">MINIM Playing Cards &mdash; $10</span>
       </a></p>
-      <p class="subtitle"><a href="https://ueno.store/product/minim-playing-cards">
+      <p class="subtitle"><a href="*|STORE_1|*">
         <span mc:edit="store_1_seller">Areaware</span>
       </a></p>
     </columns>
@@ -118,7 +118,7 @@ footerPhrase: talking about pugs
 
   <row class="collapse">
     <columns>
-      <a href="https://ueno.store/product/cat-socks">
+      <a href="*|STORE_2|*">
         <img src="{{imagePath}}/store-socks.jpg" mc:edit="store_2_image" class="image" width="599" height="360" alt="Feet wearing cat-themed socks with stripes" />
       </a>
     </columns>
@@ -126,10 +126,10 @@ footerPhrase: talking about pugs
 
   <row class="narrow store-item-2">
     <columns>
-      <p class="title"><a href="https://ueno.store/product/cat-socks">
+      <p class="title"><a href="*|STORE_2|*">
         <span mc:edit="store_2_name">Cat Socks &mdash; $8.99</span>
       </a></p>
-      <p class="subtitle"><a href="https://ueno.store/product/cat-socks">
+      <p class="subtitle"><a href="*|STORE_2|*">
         <span mc:edit="store_2_seller">CoCozy</span>
       </a></p>
     </columns>
@@ -140,7 +140,7 @@ footerPhrase: talking about pugs
   {{> header-design}}
 
   {{#*inline 'gallery-item'}}
-    <a class="design-gallery__item" href="#">
+    <a class="design-gallery__item" href="*|DESIGN_{{n}}|*">
       <img src="images/design-placeholder.jpg" mc:edit="design_{{n}}_image" class="design-gallery__item__image" width="240" />
       <span class="title" mc:edit="design_{{n}}_category">Gadgets</span>
       <span class="subtitle" mc:edit="design_{{n}}_postedby">Posted by Haraldur</span>
