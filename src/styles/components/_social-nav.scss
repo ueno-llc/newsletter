@@ -1,3 +1,8 @@
+////
+/// Social links displayed within footer.
+////
+
+// Prevent mobile Gmail from breaking the layout
 table.social-nav.social-nav {
   @include on-mobile {
     width: auto !important;

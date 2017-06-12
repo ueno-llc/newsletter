@@ -1,9 +1,17 @@
+////
+/// Custom mixins go here.
+////
+
+/// Define CSS that is only used on small devices. Remember to add `!important` to every statement.
+/// @content Mobile-specific CSS.
 @mixin on-mobile {
   @media only screen and (max-width: #{$global-breakpoint}) {
     @content;
   }
 }
 
+/// Apply antialiasing to typography. We don't put this on a `*` selector, because CSS is inlined,
+/// and inlining these two rules on every HTML element adds a lot of weight to the email.
 @mixin antialias {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

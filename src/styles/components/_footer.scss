@@ -1,8 +1,15 @@
+////
+/// Email footer.
+////
+
+// Make the background color transparent
 table.footer {
   background-color: $body-background;
 }
 
+// Outer container (row)
 .footer {
+  // Inner container (column)
   &__content {
     padding-bottom: 10px;
 
@@ -12,6 +19,7 @@ table.footer {
     }
   }
 
+  // Text within footer
   &__text {
     padding-top: 25px;
 
@@ -32,9 +40,5 @@ table.footer {
         color: $color-dark-gray;
       }
     }
-  }
-
-  .no-color {
-    color: $color-dark-gray !important;
   }
 }

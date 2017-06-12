@@ -1,3 +1,8 @@
+////
+/// Presentational unit that creates a gap between sections without a margin. It's more predictable
+/// across email clients.
+////
+
 .section-gap {
   td {
     background: $light-gray;

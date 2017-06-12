@@ -1,10 +1,16 @@
+////
+/// Poster images used in articles.
+////
+
 .image {
   width: 100%;
 
+  // Title text
   &--title {
     padding-bottom: 32px;
   }
 
+  // Upper image, appears below the first title
   &--upper {
     padding-bottom: 55px;
 
@@ -13,6 +19,7 @@
     }
   }
 
+  // Lower images, appear below all subsequent titles
   &--lower {
     padding-top: 60px;
     padding-bottom: 22px;

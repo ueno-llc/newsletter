@@ -1,17 +1,27 @@
+////
+/// Overrides to Foundation for Emails's default settings go here.
+/// @link https://github.com/zurb/foundation-emails/blob/develop/scss/settings/_settings.scss
+////
+
+// Global container width and grid gutter
 $global-width-small: 100%;
 $global-gutter: 40px;
 
+// Global colors. Make sure any color statement uses one of these
 $color-black: #000;
 $color-dark-gray: #999999;
 $color-gray: #777b85;
 $color-light-gray: #9ea0a6;
 
+// Web fonts in use
 $font-tisa: TisaPro, Helvetica, Arial, sans-serif;
 $font-akagi: AkagiPro, Helvetica, Arial, sans-serif;
 
+// Weights for the Tisa Pro web font
 $weight-tisa-thin: 200;
 $weight-tisa-light: 300;
 
+// Weights for the Akagi Pro web font
 $weight-akagi-book: 400;
 $weight-akagi-medium: 500;
 $weight-akagi-bold: 700;

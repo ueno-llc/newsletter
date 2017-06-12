@@ -1,3 +1,7 @@
+////
+/// General styles go here.
+////
+
 // Links within body copy
 .body {
   a {
@@ -17,6 +21,7 @@
   float: none;
 }
 
+// Body text
 .body-text {
   margin-bottom: 30px;
   Margin-bottom: 30px;
@@ -35,6 +40,7 @@
   }
 }
 
+// Overrides to the email container
 .container {
   margin-top: $global-gutter !important;
   Margin-top: $global-gutter !important;
@@ -45,6 +51,7 @@
   }
 }
 
+// Fix for the default `.show-for-large` class not working
 @media screen and (max-width: 620px) {
   .show-for-large {
     display: none !important;

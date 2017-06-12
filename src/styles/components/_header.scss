@@ -1,4 +1,11 @@
+////
+/// Section header. The left side will have a logo, and the right side will have some text or a link.
+////
+
+// Container
 .header {
+  // Logo styles
+  // Because it's an email, we have to define specific widths and heights for each image
   .body &__logo {
     width: 62px;
     height: 14px;
@@ -14,10 +21,13 @@
     }
   }
 
+  // Right-hand side of header
+  // Prevent text from wrapping if it's slightly too long on small screens
   &__side {
     white-space: nowrap;
   }
 
+  // Styles for date, shown in first header
   &__date {
     font-family: $font-akagi;
     font-size: 15px;
@@ -32,6 +42,7 @@
     }
   }
 
+  // Add extra spacing to header
   .columns {
     padding-top: 70px;
     padding-bottom: 60px;
@@ -42,10 +53,12 @@
     }
   }
 
+  // Right-align date or link text
   .last th {
     text-align: right;
   }
 
+  // Strip padding from columns on small screens to add more space for text
   @include on-mobile {
     &.row .columns.first {
       padding-right: 0 !important;
