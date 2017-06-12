@@ -23,6 +23,13 @@
     font-size: 15px;
     color: $color-gray;
     text-align: right;
+
+    span {
+      &,
+      &:hover {
+        border-bottom-width: 0 !important;
+      }
+    }
   }
 
   .columns {

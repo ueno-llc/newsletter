@@ -1,0 +1,25 @@
+.image {
+  width: 100%;
+
+  &--title {
+    padding-bottom: 32px;
+  }
+
+  &--upper {
+    padding-bottom: 55px;
+
+    @include on-mobile {
+      padding-bottom: 30px !important;
+    }
+  }
+
+  &--lower {
+    padding-top: 60px;
+    padding-bottom: 22px;
+
+    @include on-mobile {
+      padding-top: 30px !important;
+      padding-bottom: 10px !important;
+    }
+  }
+}

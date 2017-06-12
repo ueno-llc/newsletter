@@ -1,3 +1,16 @@
+// Links within body copy
+.body {
+  a {
+    &,
+    &:link,
+    &:visited {
+      color: $color-gray;
+			font-weight: normal;
+			text-decoration: underline;
+    }
+  }
+}
+
 // Prevent Thunderbird from applying floats to tables
 .row,
 .spacer {
@@ -29,32 +42,6 @@
   @include on-mobile {
     margin-top: 0 !important;
     Margin-top: 0 !important;
-  }
-}
-
-.image {
-  width: 100%;
-
-  &--title {
-    padding-bottom: 32px;
-  }
-
-  &--upper {
-    padding-bottom: 55px;
-
-    @include on-mobile {
-      padding-bottom: 30px !important;
-    }
-  }
-
-  &--lower {
-    padding-top: 60px;
-    padding-bottom: 22px;
-
-    @include on-mobile {
-      padding-top: 30px !important;
-      padding-bottom: 10px !important;
-    }
   }
 }
 
