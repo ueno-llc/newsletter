@@ -35,6 +35,12 @@
 			text-decoration: underline;
     }
   }
+
+  &--dark {
+    p {
+      color: $color-off-black;
+    }
+  }
 }
 
 // Overrides to the email container
