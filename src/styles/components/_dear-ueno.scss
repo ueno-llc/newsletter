@@ -30,17 +30,21 @@
     @include antialias;
     font-family: $font-akagi;
     font-size: 18px;
-    line-height: 1;
   }
 
   &__person {
     color: $color-off-black;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+
+    @include on-mobile {
+      margin-top: 7px;
+    }
   }
 
   &__title {
     color: $color-gray;
-    margin: 0;
+    margin-bottom: 0;
   }
 
   &__answer {
