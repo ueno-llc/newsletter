@@ -1,19 +1,15 @@
 .dear-ueno {
   &__logo {
     margin-top: 80px;
-    Margin-top: 80px;
     margin-bottom: 30px;
-    Margin-bottom: 30px;
   }
 
   &__question-title {
     margin-bottom: -10px;
-    Margin-bottom: -10px;
   }
 
   &__question-body {
     margin-bottom: -27px;
-    Margin-bottom: -27px;
   }
 
   &__avatar {
@@ -22,7 +18,6 @@
     border-radius: 50%;
     float: left;
     margin-right: 20px;
-    Margin-right: 20px;
 
     @include on-mobile {
       width: 60px !important;
@@ -40,20 +35,16 @@
   &__person {
     color: $color-off-black;
     margin-top: 10px;
-    Margin-top: 10px;
     margin-bottom: 4px;
-    Margin-bottom: 4px;
 
     @include on-mobile {
       margin-top: 7px;
-      Margin-top: 7px;
     }
   }
 
   &__title {
     color: $color-gray;
     margin-bottom: 0;
-    Margin-bottom: 0;
   }
 
   &__answer {
@@ -64,13 +55,10 @@
   &__footer {
     @include antialias;
     margin-top: -25px;
-    Margin-top: -25px;
     margin-bottom: 30px;
-    Margin-bottom: 30px;
 
     @include on-mobile {
       margin-top: 0 !important;
-      Margin-top: 0 !important;
     }
 
     &,
