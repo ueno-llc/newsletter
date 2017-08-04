@@ -13,6 +13,7 @@ $color-off-black: #1a1a1a;
 $color-dark-gray: #999999;
 $color-gray: #777b85;
 $color-light-gray: #9ea0a6;
+$color-white: #fff;
 
 // Web fonts in use
 $font-tisa: TisaPro, Helvetica, Arial, sans-serif;
@@ -26,3 +27,9 @@ $weight-tisa-light: 300;
 $weight-akagi-book: 400;
 $weight-akagi-medium: 500;
 $weight-akagi-bold: 700;
+
+// Make background transparent so inner sections can be white
+$container-background: transparent;
+
+// Remove bottom padding from columns
+$column-padding-bottom: 0px;

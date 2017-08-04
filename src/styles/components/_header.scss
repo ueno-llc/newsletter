@@ -4,6 +4,8 @@
 
 // Container
 .header {
+  background: $color-white;
+
   // Logo styles
   // Because it's an email, we have to define specific widths and heights for each image
   .body &__logo {

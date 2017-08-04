@@ -12,9 +12,11 @@
 
   // Upper image, appears below the first title
   &--upper {
+    margin-top: 30px;
     padding-bottom: 55px;
 
     @include on-mobile {
+      margin-top: 5px !important;
       padding-bottom: 30px !important;
     }
   }
@@ -22,11 +24,18 @@
   // Lower images, appear below all subsequent titles
   &--lower {
     padding-top: 60px;
-    padding-bottom: 22px;
 
     @include on-mobile {
       padding-top: 30px !important;
-      padding-bottom: 10px !important;
+    }
+  }
+
+  // Last image, needs padding to offset from the bottom of the section
+  &--final {
+    padding-bottom: 40px;
+
+    @include on-mobile {
+      padding-bottom: 20px !important;
     }
   }
 }

@@ -10,7 +10,7 @@
   height: 1px;
 
   @include on-mobile {
-    margin: 45px 0 45px 0;
+    margin: 45px 0 45px 0 !important;
   }
 }
 
