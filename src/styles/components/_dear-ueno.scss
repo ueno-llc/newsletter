@@ -30,6 +30,10 @@
     @include antialias;
     font-family: $font-akagi;
     font-size: 18px;
+
+    @include on-mobile {
+      font-size: 15px !important;
+    }
   }
 
   &__person {
@@ -38,7 +42,7 @@
     margin-bottom: 4px;
 
     @include on-mobile {
-      margin-top: 7px;
+      margin-top: 10px;
     }
   }
 
