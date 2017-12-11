@@ -1,5 +1,5 @@
 ---
-title: "Ueno Newsletter *|MC:SUBJECT|*"
+title: "Ueno Newsletter: *|MC:SUBJECT|*"
 date: "*|DATE:l, F j, Y|*"
 description: The very first edition of the Ueno newsletter is here
 imagePath: images/newsletter-170510
@@ -201,7 +201,7 @@ footerPhrase: talking about pugs
   {{> header-design}}
 
   {{#*inline 'gallery-item'}}
-    <a class="design-gallery__item" href="*|DESIGN_{{n}}|*">
+    <a class="design-gallery__item" href="*|DESIGN_{{n}}|*" mc:edit="design_{{n}}_link">
       <img src="images/placeholder-460.jpg" mc:edit="design_{{n}}_image" class="design-gallery__item__image" width="230" />
       <span class="title" mc:edit="design_{{n}}_category">Gadgets</span>
       <span class="subtitle" mc:edit="design_{{n}}_postedby">Posted by Haraldur</span>
