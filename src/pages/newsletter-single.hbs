@@ -1,0 +1,54 @@
+---
+title: "Ueno Newsletter: *|MC:SUBJECT|*"
+date: "*|DATE:l, F j, Y|*"
+description: The very first edition of the Ueno newsletter is here
+imagePath: images/newsletter-170510
+footerPhrase: talking about pugs
+---
+
+{{#* inline 'style'}}
+  <style>
+    .body-text a,
+    .body-text a:link,
+    .body-text a:visited {
+      color: #777b85;
+			font-weight: normal;
+			text-decoration: underline;
+    }
+
+    .final-section-spacer {
+      height: 60px;
+    }
+  </style>
+{{/inline}}
+
+{{#> section}}
+  <row class="narrow">
+    <columns>
+      <a href="*|ARTICLE_1|*">
+        <img src="{{imagePath}}/title-1.jpg" mc:edit="article_1_title" width="420" alt="This is exciting. The very first edition of the Ueno newsletter is here." class="image image--title" />
+      </a>
+    </columns>
+  </row>
+
+  <row class="collapse">
+    <columns>
+      <a href="*|ARTICLE_1|*">
+        <img src="images/placeholder-1160.jpg" mc:edit="article_1_image" class="image image--upper" width="580" alt="Hand inside mailbox holding out letter" />
+      </a>
+    </columns>
+  </row>
+
+  <row class="narrow">
+    <columns>
+      <div class="body-text" mc:edit="article_1_text">
+        <p>You know the drill. It’s a <a href="example.com">newsletter</a>, with news, about Ueno. If you don’t unsubscribe you can expect to get this in your inbox every two weeks. That’s it really.</p>
+        <p>It will be full of good words, pictures and occasional references to pugs, all surrounded by lovely white space. You will like it. Probably. Maybe.</p>
+      </div>
+      {{#> link href='*|ARTICLE_1|*'}}
+        <span mc:edit="article_1_linktext">Read more about the Ueno newsletter</span>
+      {{/link}}
+      <div class="final-section-spacer"></div>
+    </columns>
+  </row>
+{{/section}}
