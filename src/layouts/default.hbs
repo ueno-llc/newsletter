@@ -13,13 +13,13 @@
   </head>
   <body>
     {{> fonts}}
-    <span class="preheader" style="visibility: hidden; font-size: 1px; color: #f3f3f3; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; display: none; mso-hide: all;">*|PREVIEWTXT|*</span>
+    <span class="preheader" style="visibility: hidden; font-size: 1px; color: #f3f3f3; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; display: none; mso-hide: all;">{{ previewText }}</span>
     <table class="body">
       <tr>
         <td class="center" align="center" valign="top">
           <center>
             <container>
-              {{> header date=date}}
+              {{> header date=date }}
               {{> body}}
               {{> footer}}
             </container>
