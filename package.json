@@ -18,7 +18,7 @@
     "watch-sass": "npm run sass && npm run sass -- --watch",
     "inline": "scow 'build/**/*.html' dist",
     "clean": "rimraf build && mkdir build",
-    "server": "lite-server",
+    "server": "lite-server -c bs-config.js",
     "test": "mocha"
   },
   "repository": {
@@ -38,13 +38,13 @@
   "devDependencies": {
     "cpy-cli": "^1.0.1",
     "inky-cli": "^1.0.1",
-    "node-sass": "^4.5.2",
-    "npm-run-all": "^4.0.2",
-    "onchange": "^3.2.1",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "onchange": "^3.3.0",
     "opn-cli": "^3.1.0",
     "panini": "^2.0.0-alpha.2",
-    "pug": "^2.0.0-rc.1",
-    "rimraf": "^2.6.1",
+    "pug": "^2.0.0-rc.4",
+    "rimraf": "^2.6.2",
     "scow": "^4.0.0-alpha.3"
   },
   "dependencies": {
