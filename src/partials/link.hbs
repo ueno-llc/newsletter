@@ -1,7 +1,9 @@
-<a href="{{ href }}" class="link">
-  <img class="link__caret" src="images/caret.jpg" width="5" height="9" alt="" />
-  &nbsp;
-  <span class="link__text">
-    {{> @partial-block}}
-  </span>
-</a>
+<div{{#if edit}} mc:edit="{{ edit }}"{{/if}}>
+  <a href="{{ default href '#' }}" class="link">
+    <img class="link__caret" src="images/caret.jpg" width="5" height="9" alt="" />
+    &nbsp;
+    <span class="link__text">
+      {{> @partial-block}}
+    </span>
+  </a>
+</div>

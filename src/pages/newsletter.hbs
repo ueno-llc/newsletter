@@ -11,13 +11,17 @@
     .dear-ueno__question-body p:last-child {
       margin-bottom: 0;
     }
+
+    .design-gallery__item img {
+      padding-bottom: 20px;
+    }
   </style>
 {{/inline}}
 
 {{#> section}}
   <row class="narrow">
     <columns>
-      <a href="*|ARTICLE_1|*">
+      <a href="#">
         <img src="images/placeholder-title.jpg" mc:edit="article_1_title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." class="image image--title" />
       </a>
     </columns>
@@ -25,7 +29,7 @@
 
   <row class="collapse">
     <columns>
-      <a href="*|ARTICLE_1|*">
+      <a href="#">
         <img src="images/placeholder-1160.jpg" mc:edit="article_1_image" class="image image--upper" width="580" alt="Hand inside mailbox holding out letter" />
       </a>
     </columns>
@@ -37,27 +41,27 @@
         <p>You know the drill. It’s a <a href="example.com">newsletter</a>, with news, about Ueno. If you don’t unsubscribe you can expect to get this in your inbox every two weeks. That’s it really.</p>
         <p>It will be full of good words, pictures and occasional references to pugs, all surrounded by lovely white space. You will like it. Probably. Maybe.</p>
       </div>
-      {{#> link href='*|ARTICLE_1|*'}}
-        <span mc:edit="article_1_linktext">Read more about the Ueno newsletter</span>
+      {{#> link edit='article_1_linktext'}}
+        Read more about the Ueno newsletter
       {{/link}}
 
       {{> divider }}
 
-      <a href="*|ARTICLE_2|*">
+      <a href="#">
         <img src="images/placeholder-title.jpg" mc:edit="article_2_title" class="image image--title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." />
       </a>
       <div class="body-text" mc:edit="article_2_body">
         <p>We are opening up our doors in Los Angeles this month and announcing our first hire. Find out more in our brand new Medium post.</p>
       </div>
-      {{#> link href='*|ARTICLE_2|*'}}
-        <span mc:edit="article_2_linktext">Read more about Ueno LA</span>
+      {{#> link edit='article_2_linktext'}}
+        Read more about Ueno LA
       {{/link}}
     </columns>
   </row>
 
   <row>
     <columns>
-      <a href="*|ARTICLE_2|*">
+      <a href="#">
         <img class="image image--lower" mc:edit="article_2_image" src="images/placeholder-1000.jpg" width="500" alt="Ueno's Los Angeles office" />
       </a>
     </columns>
@@ -66,21 +70,21 @@
   <row class="narrow">
     <columns>
       {{> divider safeguard='true' }}
-      <a href="*|ARTICLE_3|*">
+      <a href="#">
         <img src="images/placeholder-title.jpg" mc:edit="article_3_title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." class="image image--title" />
       </a>
       <div class="body-text" mc:edit="article_3_text">
         <p>Ok, listen up. Jenny and Robbin will be saying clever things at the Awwwards Conference in Los Angeles on June 2, so there’s that.</p>
       </div>
-      {{#> link href='*|ARTICLE_3|*'}}
-        <span mc:edit="article_3_linktext">Awwwards Conference</span>
+      {{#> link edit='article_3_linktext'}}
+        Awwwards Conference
       {{/link}}
     </columns>
   </row>
 
   <row>
     <columns>
-      <a href="*|ARTICLE_3|*">
+      <a href="#">
         <img class="image image--lower image--final" mc:edit="article_3_image" src="images/placeholder-1000.jpg" width="500" alt="Jenny and Robbin standing side by side" />
       </a>
     </columns>
@@ -115,8 +119,8 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id tempor enim. Vivamus tellus eros, scelerisque non eros quis, ornare commodo metus.</p>
         <p>Praesent quis ultricies orci. Cras volutpat venenatis dui, eget mattis elit tristique vitae. Pellentesque vel erat vel ligula faucibus euismod ut non metus. Cras facilisis laoreet libero pretium tempus. Aenean eget egestas tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivam...</p>
       </div>
-      {{#> link href='*|DEAR_UENO|*' }}
-        <span mc:edit="dearueno_answer_link">Read the full answer</span>
+      {{#> link edit='dearueno_answer_link' }}
+        Read the full answer
       {{/link}}
     </columns>
   </row>
@@ -133,7 +137,7 @@
 
   <row class="collapse">
     <columns>
-      <a href="*|STORE_1|*">
+      <a href="#">
         <img src="images/placeholder-1160.jpg" mc:edit="store_1_image" class="image" width="580" alt="Hand holding playing cards" />
       </a>
     </columns>
@@ -141,18 +145,18 @@
 
   <row class="narrow store-item-1">
     <columns>
-      <p class="title"><a href="*|STORE_1|*">
-        <span mc:edit="store_1_name">MINIM Playing Cards &mdash; $10</span>
+      <p class="title" mc:edit="store_1_name"><a href="#">
+        MINIM Playing Cards &mdash; $10
       </a></p>
-      <p class="subtitle"><a href="*|STORE_1|*">
-        <span mc:edit="store_1_seller">Areaware</span>
+      <p class="subtitle" mc:edit="store_1_seller"><a href="#">
+        Areaware
       </a></p>
     </columns>
   </row>
 
   <row class="collapse">
     <columns>
-      <a href="*|STORE_2|*">
+      <a href="#">
         <img src="images/placeholder-1160.jpg" mc:edit="store_2_image" class="image" width="580" alt="Feet wearing cat-themed socks with stripes" />
       </a>
     </columns>
@@ -160,11 +164,11 @@
 
   <row class="narrow store-item-2">
     <columns>
-      <p class="title"><a href="*|STORE_2|*">
-        <span mc:edit="store_2_name">Cat Socks &mdash; $8.99</span>
+      <p class="title" mc:edit="store_2_name"><a href="#">
+        Cat Socks &mdash; $8.99
       </a></p>
-      <p class="subtitle"><a href="*|STORE_2|*">
-        <span mc:edit="store_2_seller">CoCozy</span>
+      <p class="subtitle" mc:edit="store_2_seller"><a href="#">
+        CoCozy
       </a></p>
     </columns>
   </row>
