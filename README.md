@@ -32,4 +32,4 @@ For each file in the `pages/` folder, a ZIP file will be created with the CSS in
 
 ## License
 
-&copy; MIT [ueno.](https://ueno.co)
+MIT &copy; [ueno.](https://ueno.co)
