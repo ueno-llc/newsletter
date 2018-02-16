@@ -1,7 +1,8 @@
 {
-  "name": "email-templates",
+  "name": "@ueno/newsletter",
+  "private": true,
   "version": "1.0.0",
-  "description": "ueno. email templates",
+  "description": "Ueno's newsletter email templates",
   "main": "index.js",
   "scripts": {
     "start": "npm run clean && run-p watch-emails watch-sass watch-assets server",
@@ -23,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ueno-llc/email-templates.git"
+    "url": "git+ssh://git@github.com/ueno-llc/newsletter.git"
   },
   "keywords": [
     "ueno",
@@ -32,9 +33,9 @@
   "author": "ueno. <hi@ueno.co> (http://ueno.co)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ueno-llc/email-templates/issues"
+    "url": "https://github.com/ueno-llc/newsletter/issues"
   },
-  "homepage": "https://github.com/ueno-llc/email-templates#readme",
+  "homepage": "https://github.com/ueno-llc/newsletter#readme",
   "devDependencies": {
     "cpy-cli": "^1.0.1",
     "inky-cli": "^1.0.1",
