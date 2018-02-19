@@ -1,0 +1,19 @@
+scripts:
+  default: nps clean watch
+  watch: concurrently "nps emails.watch" "nps assets.watch" "nps sass.watch" "nps server"
+  build:
+    default: nps build.pre clean sass assets emails.inline build.post
+    pre: rimraf dist
+    post: opn dist
+  emails:
+    default: panini src build && inky "build/*.html" build
+    watch: onchange "src/**/*.{hbs,yml,js}" -i -- nps emails
+    inline: nps emails && scow "build/**/*.html" dist
+  assets:
+    default: cpy "**/*.*" "../../build" --cwd=src/assets --parents
+    watch: onchange "src/assets/**/*" -i -- nps assets
+  sass:
+    default: node-sass --include-path=. -o=build src/styles
+    watch: nps sass && nps "sass --watch"
+  clean: rimraf build && mkdir build
+  server: lite-server -c bs-config.js
