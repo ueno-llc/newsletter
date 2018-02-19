@@ -1,19 +1,27 @@
 scripts:
+  # Runs the build process in watch mode. Run with `npm start`
   default: nps clean watch
-  watch: concurrently "nps emails.watch" "nps assets.watch" "nps sass.watch" "nps server"
+  # Runs the build process for uploading to Mailchimp. Run with `npm run build`
   build:
     default: nps build.pre clean sass assets emails.inline build.post
     pre: rimraf dist
     post: opn dist
+  # Watch templates, static assets, and Sass files for changes and re-compile
+  watch: concurrently "nps emails.watch" "nps assets.watch" "nps sass.watch" "nps server"
+  # Transform Inky HTML templates into standard HTML
   emails:
     default: panini src build && inky "build/*.html" build
     watch: onchange "src/**/*.{hbs,yml,js}" -i -- nps emails
     inline: nps emails && scow "build/**/*.html" dist
+  # Copy static assets
   assets:
     default: cpy "**/*.*" "../../build" --cwd=src/assets --parents
     watch: onchange "src/assets/**/*" -i -- nps assets
+  # Compile Sass to CSS
   sass:
     default: node-sass --include-path=. -o=build src/styles
     watch: nps sass && nps "sass --watch"
+  # Empty build folder
   clean: rimraf build && mkdir build
+  # Run live-reloading server
   server: lite-server -c bs-config.js
