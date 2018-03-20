@@ -59,28 +59,30 @@
     </columns>
   </row>
 
-  <row class="narrow">
-    <columns>
-      {{> divider safeguard='true' }}
-      <a href="#">
-        <img src="images/placeholder-title.jpg" mc:edit="article_3_title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." class="image image--title" />
-      </a>
-      <div class="body-text" mc:edit="article_3_text">
-        <p>Ok, listen up. Jenny and Robbin will be saying clever things at the Awwwards Conference in Los Angeles on June 2, so there’s that.</p>
-      </div>
-      {{#> link edit='article_3_linktext'}}
-        Awwwards Conference
-      {{/link}}
-    </columns>
-  </row>
+  <div mc:hideable>
+    <row class="narrow">
+      <columns>
+        {{> divider safeguard='true' }}
+        <a href="#">
+          <img src="images/placeholder-title.jpg" mc:edit="article_3_title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." class="image image--title" />
+        </a>
+        <div class="body-text" mc:edit="article_3_text">
+          <p>Ok, listen up. Jenny and Robbin will be saying clever things at the Awwwards Conference in Los Angeles on June 2, so there’s that.</p>
+        </div>
+        {{#> link edit='article_3_linktext'}}
+          Awwwards Conference
+        {{/link}}
+      </columns>
+    </row>
 
-  <row>
-    <columns>
-      <a href="#">
-        <img class="image image--lower" mc:edit="article_3_image" src="images/placeholder-1000.jpg" width="500" alt="Jenny and Robbin standing side by side" />
-      </a>
-    </columns>
-  </row>
+    <row>
+      <columns>
+        <a href="#">
+          <img class="image image--lower" mc:edit="article_3_image" src="images/placeholder-1000.jpg" width="500" alt="Jenny and Robbin standing side by side" />
+        </a>
+      </columns>
+    </row>
+  </div>
 {{/section}}
 
 {{#> section}}
