@@ -59,7 +59,6 @@
   &__footer {
     @include antialias;
     margin-top: -25px;
-    margin-bottom: 30px;
 
     @include on-mobile {
       margin-top: 0 !important;

@@ -29,13 +29,4 @@
       padding-top: 30px !important;
     }
   }
-
-  // Last image, needs padding to offset from the bottom of the section
-  &--final {
-    padding-bottom: 40px;
-
-    @include on-mobile {
-      padding-bottom: 20px !important;
-    }
-  }
 }

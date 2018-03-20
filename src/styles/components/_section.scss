@@ -1,8 +1,14 @@
 .section {
   background: $color-white;
   margin-bottom: 40px;
+  padding-bottom: 40px;
 
   @include on-mobile {
     margin-bottom: 1px !important;
+    padding-bottom: 20px !important;
+  }
+
+  &--footer {
+    background: $body-background;
   }
 }
