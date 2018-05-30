@@ -1,0 +1,22 @@
+.job-openings {
+  &__header {
+    margin-top: 80px;
+  }
+
+  &__body {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__icon {
+    width: 11px !important;
+    height: 14px !important;
+    display: inline;
+    position: relative;
+    top: 1px;
+    margin-left: 3px;
+  }
+}

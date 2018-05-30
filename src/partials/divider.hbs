@@ -1,5 +1,5 @@
 {{#if safeguard}}<p class="divider-safeguard">&nbsp;</p>{{/if}}
 {{#with (default color 'e5e5e5') as |color|}}
-  <hr noshade class="divider" color="#{{color}}" width="100%" size="1" style="color:#{{color}}; background-color: #{{color}}" />
+  <hr noshade class="divider {{#if ../narrow}}divider--narrow{{/if}}" color="#{{color}}" width="100%" size="1" style="color:#{{color}}; background-color: #{{color}}" />
 {{/with}}
 {{#if safeguard}}<p class="divider-safeguard">&nbsp;</p>{{/if}}

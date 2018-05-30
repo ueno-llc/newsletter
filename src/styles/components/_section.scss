@@ -11,4 +11,14 @@
   &--footer {
     background: $body-background;
   }
+
+  &--openings {
+    padding-bottom: 70px;
+    background: $color-white url('images/jobs-background.jpg') right bottom no-repeat;
+    background-size: 332px 66px;
+
+    @include on-mobile {
+      padding-bottom: 100px !important;
+    }
+  }
 }

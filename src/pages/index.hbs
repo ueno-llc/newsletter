@@ -126,6 +126,60 @@
   </row>
 {{/section}}
 
+{{#> section hideable=true jobs=true}}
+  <row class="narrow">
+    <columns>
+      <img class="job-openings__header" src="images/open-positions.jpg" width="420" alt="Open positions" mc:edit="jobopenings_title">
+      {{> divider color='e8e8e8' narrow=true }}
+    </columns>
+  </row>
+  <row class="job-openings__body narrow">
+    <columns large="6">
+      <div class="job-openings__title">
+        <p class="title">
+          <a href="//example.com" mc:edit="jobopenings_1_title">
+            Art director
+          </a>
+        </p>
+        <p class="subtitle">
+          <a href="//example.com" mc:edit="jobopenings_1_subtitle">
+            New York
+          </a>
+          <img src="images/pin.jpg" alt="" class="job-openings__icon" with="11" height="14">
+        </p>
+      </div>
+      <div class="body-text" mc:edit="jobopenings_2_description">
+        <p>Are you a good person who when asked for directions by a tourist will always answer truthfully?</p>
+      </div>
+    </columns>
+    <columns large="6">
+      <div class="job-openings__title">
+        <p class="title">
+          <a href="//example.com" mc:edit="jobopenings_1_title">
+            Art director
+          </a>
+        </p>
+        <p class="subtitle">
+          <a href="//example.com" mc:edit="jobopenings_1_subtitle">
+            New York
+          </a>
+          <img src="images/pin.jpg" alt="" class="job-openings__icon" with="11" height="14">
+        </p>
+      </div>
+      <div class="body-text" mc:edit="jobopenings_2_description">
+        <p>Are you a good person who when asked for directions by a tourist will always answer truthfully?</p>
+      </div>
+    </columns>
+  </row>
+  <row class="narrow">
+    <columns>
+      {{#> link edit='jobopenings_linktext'}}
+        We're hiring
+      {{/link}}
+    </columns>
+  </row>
+{{/section}}
+
 {{#> section hideable=true}}
   {{> header-store}}
 
@@ -168,7 +222,7 @@
   </row>
 {{/section}}
 
-{{#> section}}
+{{#> section hideable=true}}
   {{> header-design}}
 
   <row class="design-gallery">
