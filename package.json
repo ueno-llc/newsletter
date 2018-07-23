@@ -1,9 +1,7 @@
 {
-  "name": "@ueno/newsletter",
+  "name": "ueno-newsletter",
   "private": true,
-  "version": "1.0.0",
-  "description": "Ueno's newsletter email templates",
-  "main": "index.js",
+  "description": "Newsletter email templates",
   "scripts": {
     "start": "nps",
     "build": "nps build"
@@ -12,15 +10,8 @@
     "type": "git",
     "url": "git+ssh://git@github.com/ueno-llc/newsletter.git"
   },
-  "keywords": [
-    "ueno",
-    "email"
-  ],
   "author": "ueno. <hi@ueno.co> (http://ueno.co)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ueno-llc/newsletter/issues"
-  },
   "homepage": "https://github.com/ueno-llc/newsletter#readme",
   "devDependencies": {
     "cpy-cli": "^2.0.0",
