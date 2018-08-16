@@ -28,7 +28,7 @@
     <img src="images/placeholder-1160.jpg" mc:edit="article_1_image" class="image image--upper" width="580" alt="Hand inside mailbox holding out letter" />
   </a>
 
-  <div class="segment segment--narrow">
+  <div class="segment segment--narrow first-story">
     <div class="body-text" mc:edit="article_1_text">
       <p>You know the drill. It’s a <a href="example.com">newsletter</a>, with news, about Ueno. If you don’t unsubscribe you can expect to get this in your inbox every two weeks. That’s it really.</p>
       <p>It will be full of good words, pictures and occasional references to pugs, all surrounded by lovely white space. You will like it. Probably. Maybe.</p>
@@ -36,27 +36,31 @@
     {{#> link edit='article_1_linktext'}}
       Read more about the Ueno newsletter
     {{/link}}
+  </div>
 
-    {{> divider }}
+  <div mc:hideable data-hideable="second story">
+    <div class="segment segment--narrow">
+      {{> divider }}
 
-    <a href="#">
-      <img src="images/placeholder-title.jpg" mc:edit="article_2_title" class="image image--title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." />
-    </a>
-    <div class="body-text" mc:edit="article_2_body">
-      <p>We are opening up our doors in Los Angeles this month and announcing our first hire. Find out more in our brand new Medium post.</p>
+      <a href="#">
+        <img src="images/placeholder-title.jpg" mc:edit="article_2_title" class="image image--title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." />
+      </a>
+      <div class="body-text" mc:edit="article_2_body">
+        <p>We are opening up our doors in Los Angeles this month and announcing our first hire. Find out more in our brand new Medium post.</p>
+      </div>
+      {{#> link edit='article_2_linktext'}}
+        Read more about Ueno LA
+      {{/link}}
     </div>
-    {{#> link edit='article_2_linktext'}}
-      Read more about Ueno LA
-    {{/link}}
+
+    <div class="segment">
+      <a href="#">
+        <img class="image image--lower" mc:edit="article_2_image" src="images/placeholder-1000.jpg" width="500" alt="Ueno's Los Angeles office" />
+      </a>
+    </div>
   </div>
 
-  <div class="segment">
-    <a href="#">
-      <img class="image image--lower" mc:edit="article_2_image" src="images/placeholder-1000.jpg" width="500" alt="Ueno's Los Angeles office" />
-    </a>
-  </div>
-
-  <div mc:hideable>
+  <div mc:hideable data-hideable="third story">
     <div class="segment segment--narrow">
       {{> divider safeguard='true' }}
       <a href="#">

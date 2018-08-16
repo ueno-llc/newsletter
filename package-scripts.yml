@@ -3,7 +3,7 @@ scripts:
   default: nps clean watch
   # Runs the build process for uploading to Mailchimp. Run with `npm run build`
   build:
-    default: nps build.pre clean sass assets emails.inline build.post
+    default: NODE_ENV=production nps build.pre clean sass assets emails.inline build.post
     pre: rimraf dist
     post: opn dist
   # Watch templates, static assets, and Sass files for changes and re-compile

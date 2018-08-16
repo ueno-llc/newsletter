@@ -1,0 +1,71 @@
+{{#unless env.production}}
+  <div data-controls></div>
+  <style>
+    [data-controls] {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 30px;
+      background: rgba(0, 0, 0, 0.75);
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      padding-left: 15px;
+    }
+
+    [data-controls] button {
+      -webkit-appearance: none;
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      color: white;
+      font-size: 14px;
+      border: 0;
+      outline: 0;
+      margin-right: 20px;
+      line-height: 1;
+      cursor: pointer;
+      transition: opacity 0.15s linear;
+      position: relative;
+    }
+
+    [data-controls] button:hover {
+      opacity: 0.75;
+    }
+
+    [data-controls] button:active {
+      top: 1px;
+    }
+  </style>
+  <script>
+    !function() {
+      const controls = document.querySelector('[data-controls]');
+      const hideables = document.querySelectorAll('[mc\\3A hideable]');
+
+      console.log(hideables);
+
+      hideables.forEach(hideable => {
+        const name = hideable.getAttribute('data-hideable');
+        const button = document.createElement('button');
+        const placeholder = document.createComment('Shh');
+        let hidden = false;
+
+        button.textContent = `Hide ${name}`;
+
+        button.addEventListener('click', () => {
+          hidden = !hidden;
+          button.textContent = (hidden ? 'Show' : 'Hide') + ` ${name}`;
+
+          if (hidden) {
+            hideable.replaceWith(placeholder);
+          } else {
+            placeholder.replaceWith(hideable);
+          }
+        });
+
+        controls.appendChild(button);
+      });
+    }();
+  </script>
+{{/unless}}
