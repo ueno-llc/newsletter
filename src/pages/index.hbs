@@ -18,128 +18,104 @@
 {{/inline}}
 
 {{#> section}}
-  <row class="narrow">
-    <columns>
-      <a href="#">
-        <img src="images/placeholder-title.jpg" mc:edit="article_1_title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." class="image image--title" />
-      </a>
-    </columns>
-  </row>
+  <div class="segment segment--narrow">
+    <a href="#">
+      <img src="images/placeholder-title.jpg" mc:edit="article_1_title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." class="image image--title" />
+    </a>
+  </div>
 
-  <row class="collapse">
-    <columns>
-      <a href="#">
-        <img src="images/placeholder-1160.jpg" mc:edit="article_1_image" class="image image--upper" width="580" alt="Hand inside mailbox holding out letter" />
-      </a>
-    </columns>
-  </row>
+  <a href="#">
+    <img src="images/placeholder-1160.jpg" mc:edit="article_1_image" class="image image--upper" width="580" alt="Hand inside mailbox holding out letter" />
+  </a>
 
-  <row class="narrow">
-    <columns>
-      <div class="body-text" mc:edit="article_1_text">
-        <p>You know the drill. It’s a <a href="example.com">newsletter</a>, with news, about Ueno. If you don’t unsubscribe you can expect to get this in your inbox every two weeks. That’s it really.</p>
-        <p>It will be full of good words, pictures and occasional references to pugs, all surrounded by lovely white space. You will like it. Probably. Maybe.</p>
-      </div>
-      {{#> link edit='article_1_linktext'}}
-        Read more about the Ueno newsletter
-      {{/link}}
+  <div class="segment segment--narrow">
+    <div class="body-text" mc:edit="article_1_text">
+      <p>You know the drill. It’s a <a href="example.com">newsletter</a>, with news, about Ueno. If you don’t unsubscribe you can expect to get this in your inbox every two weeks. That’s it really.</p>
+      <p>It will be full of good words, pictures and occasional references to pugs, all surrounded by lovely white space. You will like it. Probably. Maybe.</p>
+    </div>
+    {{#> link edit='article_1_linktext'}}
+      Read more about the Ueno newsletter
+    {{/link}}
 
-      {{> divider }}
+    {{> divider }}
 
-      <a href="#">
-        <img src="images/placeholder-title.jpg" mc:edit="article_2_title" class="image image--title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." />
-      </a>
-      <div class="body-text" mc:edit="article_2_body">
-        <p>We are opening up our doors in Los Angeles this month and announcing our first hire. Find out more in our brand new Medium post.</p>
-      </div>
-      {{#> link edit='article_2_linktext'}}
-        Read more about Ueno LA
-      {{/link}}
-    </columns>
-  </row>
+    <a href="#">
+      <img src="images/placeholder-title.jpg" mc:edit="article_2_title" class="image image--title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." />
+    </a>
+    <div class="body-text" mc:edit="article_2_body">
+      <p>We are opening up our doors in Los Angeles this month and announcing our first hire. Find out more in our brand new Medium post.</p>
+    </div>
+    {{#> link edit='article_2_linktext'}}
+      Read more about Ueno LA
+    {{/link}}
+  </div>
 
-  <row>
-    <columns>
-      <a href="#">
-        <img class="image image--lower" mc:edit="article_2_image" src="images/placeholder-1000.jpg" width="500" alt="Ueno's Los Angeles office" />
-      </a>
-    </columns>
-  </row>
+  <div class="segment">
+    <a href="#">
+      <img class="image image--lower" mc:edit="article_2_image" src="images/placeholder-1000.jpg" width="500" alt="Ueno's Los Angeles office" />
+    </a>
+  </div>
 
   <div mc:hideable>
-    <row class="narrow">
-      <columns>
-        {{> divider safeguard='true' }}
-        <a href="#">
-          <img src="images/placeholder-title.jpg" mc:edit="article_3_title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." class="image image--title" />
-        </a>
-        <div class="body-text" mc:edit="article_3_text">
-          <p>Ok, listen up. Jenny and Robbin will be saying clever things at the Awwwards Conference in Los Angeles on June 2, so there’s that.</p>
-        </div>
-        {{#> link edit='article_3_linktext'}}
-          Awwwards Conference
-        {{/link}}
-      </columns>
-    </row>
+    <div class="segment segment--narrow">
+      {{> divider safeguard='true' }}
+      <a href="#">
+        <img src="images/placeholder-title.jpg" mc:edit="article_3_title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." class="image image--title" />
+      </a>
+      <div class="body-text" mc:edit="article_3_text">
+        <p>Ok, listen up. Jenny and Robbin will be saying clever things at the Awwwards Conference in Los Angeles on June 2, so there’s that.</p>
+      </div>
+      {{#> link edit='article_3_linktext'}}
+        Awwwards Conference
+      {{/link}}
+    </div>
 
-    <row>
-      <columns>
-        <a href="#">
-          <img class="image image--lower" mc:edit="article_3_image" src="images/placeholder-1000.jpg" width="500" alt="Jenny and Robbin standing side by side" />
-        </a>
-      </columns>
-    </row>
+    <div class="segment">
+      <a href="#">
+        <img class="image image--lower" mc:edit="article_3_image" src="images/placeholder-1000.jpg" width="500" alt="Jenny and Robbin standing side by side" />
+      </a>
+    </div>
   </div>
 {{/section}}
 
 {{#> section variant="Dear Ueno"}}
-  <row class="narrow">
-    <columns>
-      <img class="dear-ueno__logo" src="images/dear-ueno.jpg" width="420" alt="Dear Ueno. Our advice column." mc:edit="dearueno_title">
-      <div class="body-text dear-ueno__question-title" mc:edit="dearueno_question_title">
-        <p>Martijn, a designer from Amsterdam asks:</p>
-      </div>
-      <div class="body-text body-text--dark dear-ueno__question-body" mc:edit="dearueno_question_body">
-        <p>"I thought it would be a good idea to contact some of the best creative agencies and ask for some advice on the do's and dont's of an online portfolio. I would greatly appreciate if you could maybe give me some tips on this matter? Thanks in advance."</p>
-      </div>
-    </columns>
-  </row>
+  <div class="segment segment--narrow">
+    <img class="dear-ueno__logo" src="images/dear-ueno.jpg" width="420" alt="Dear Ueno. Our advice column." mc:edit="dearueno_title">
+    <div class="body-text dear-ueno__question-title" mc:edit="dearueno_question_title">
+      <p>Martijn, a designer from Amsterdam asks:</p>
+    </div>
+    <div class="body-text body-text--dark dear-ueno__question-body" mc:edit="dearueno_question_body">
+      <p>"I thought it would be a good idea to contact some of the best creative agencies and ask for some advice on the do's and dont's of an online portfolio. I would greatly appreciate if you could maybe give me some tips on this matter? Thanks in advance."</p>
+    </div>
+  </div>
   {{> divider color='e8e8e8' }}
-  <row class="narrow">
-    <columns>
+  <div class="segment segment--narrow">
+    <div class="clearfix">
       <img class="dear-ueno__avatar" alt="Justin Greene" src="images/placeholder-136.jpg" mc:edit="dearueno_answer_avatar">
       <div class="dear-ueno__answerer">
         <p class="dear-ueno__person" mc:edit="dearueno_answer_person">Justin Greene</p>
         <p class="dear-ueno__title" mc:edit="dearueno_answer_title">Ueno Designer in LA answers:</p>
       </div>
-    </columns>
-  </row>
-  <row class="narrow">
-    <columns>
-      <div class="body-text dear-ueno__answer" mc:edit="dearueno_answer_body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id tempor enim. Vivamus tellus eros, scelerisque non eros quis, ornare commodo metus.</p>
-        <p>Praesent quis ultricies orci. Cras volutpat venenatis dui, eget mattis elit tristique vitae. Pellentesque vel erat vel ligula faucibus euismod ut non metus. Cras facilisis laoreet libero pretium tempus. Aenean eget egestas tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivam...</p>
-      </div>
-      {{#> link edit='dearueno_answer_link' }}
-        Read the full answer
-      {{/link}}
-    </columns>
-  </row>
+    </div>
+    <div class="body-text dear-ueno__answer" mc:edit="dearueno_answer_body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id tempor enim. Vivamus tellus eros, scelerisque non eros quis, ornare commodo metus.</p>
+      <p>Praesent quis ultricies orci. Cras volutpat venenatis dui, eget mattis elit tristique vitae. Pellentesque vel erat vel ligula faucibus euismod ut non metus. Cras facilisis laoreet libero pretium tempus. Aenean eget egestas tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivam...</p>
+    </div>
+    {{#> link edit='dearueno_answer_link' }}
+      Read the full answer
+    {{/link}}
+  </div>
   {{> divider color='e8e8e8' }}
-  <row class="narrow">
-    <columns>
-      <p class="dear-ueno__footer" mc:edit="dearueno_footer">Got a question you want us to answer?<br><a href="https://medium.com/ueno/dear-ueno-b6946471b26a">Learn more about Dear Ueno and how to submit questions</a></p>
-    </columns>
-  </row>
+  <div class="segment segment--narrow">
+    <p class="dear-ueno__footer" mc:edit="dearueno_footer">Got a question you want us to answer?<br><a href="https://medium.com/ueno/dear-ueno-b6946471b26a">Learn more about Dear Ueno and how to submit questions</a></p>
+  </div>
 {{/section}}
 
 {{#> section jobs=true variant="Job Openings"}}
-  <row class="narrow">
-    <columns>
-      <img class="job-openings__header" src="images/open-positions.jpg" width="420" alt="Open positions" mc:edit="jobopenings_title">
-      {{> divider color='e8e8e8' narrow=true }}
-    </columns>
-  </row>
+  <div class="segment segment--narrow">
+    <img class="job-openings__header" src="images/open-positions.jpg" width="420" alt="Open positions" mc:edit="jobopenings_title">
+    {{> divider color='e8e8e8' narrow=true }}
+  </div>
   <row class="job-openings__body narrow">
     <columns large="6">
       <div class="job-openings__title" mc:edit="jobopenings_1_name">
@@ -178,55 +154,41 @@
       </div>
     </columns>
   </row>
-  <row class="narrow">
-    <columns>
-      {{#> link edit='jobopenings_linktext'}}
-        We're hiring
-      {{/link}}
-    </columns>
-  </row>
+  <div class="segment segment--narrow">
+    {{#> link edit='jobopenings_linktext'}}
+      We're hiring
+    {{/link}}
+  </div>
 {{/section}}
 
 {{#> section variant="ueno.store"}}
   {{> header-store}}
 
-  <row class="collapse">
-    <columns>
-      <a href="#">
-        <img src="images/placeholder-1160.jpg" mc:edit="store_1_image" class="image" width="580" alt="Hand holding playing cards" />
-      </a>
-    </columns>
-  </row>
+  <a href="#">
+    <img src="images/placeholder-1160.jpg" mc:edit="store_1_image" class="image" width="580" alt="Hand holding playing cards" />
+  </a>
 
-  <row class="narrow store-item-1">
-    <columns>
-      <p class="title" mc:edit="store_1_name"><a href="#">
-        MINIM Playing Cards &mdash; $10
-      </a></p>
-      <p class="subtitle" mc:edit="store_1_seller"><a href="#">
-        Areaware
-      </a></p>
-    </columns>
-  </row>
+  <div class="segment segment--narrow store-item-1">
+    <p class="title" mc:edit="store_1_name"><a href="#">
+      MINIM Playing Cards &mdash; $10
+    </a></p>
+    <p class="subtitle" mc:edit="store_1_seller"><a href="#">
+      Areaware
+    </a></p>
+  </div>
 
-  <row class="collapse">
-    <columns>
-      <a href="#">
-        <img src="images/placeholder-1160.jpg" mc:edit="store_2_image" class="image" width="580" alt="Feet wearing cat-themed socks with stripes" />
-      </a>
-    </columns>
-  </row>
+  <a href="#">
+    <img src="images/placeholder-1160.jpg" mc:edit="store_2_image" class="image" width="580" alt="Feet wearing cat-themed socks with stripes" />
+  </a>
 
-  <row class="narrow store-item-2">
-    <columns>
-      <p class="title" mc:edit="store_2_name"><a href="#">
-        Cat Socks &mdash; $8.99
-      </a></p>
-      <p class="subtitle" mc:edit="store_2_seller"><a href="#">
-        CoCozy
-      </a></p>
-    </columns>
-  </row>
+  <div class="segment segment--narrow store-item-2">
+    <p class="title" mc:edit="store_2_name"><a href="#">
+      Cat Socks &mdash; $8.99
+    </a></p>
+    <p class="subtitle" mc:edit="store_2_seller"><a href="#">
+      CoCozy
+    </a></p>
+  </div>
 {{/section}}
 
 {{#> section variant="ueno.design"}}
@@ -247,13 +209,11 @@
 {{/section}}
 
 {{#> section variant="Spotify" spotify=true}}
-  <row class="narrow spotify">
-    <columns>
-      <img class="spotify__title" src="images/placeholder-title-white.png" width="420" alt="Playlist title">
-      <p class="title" mc:edit="spotify_text">Playlist by Halli at Ueno SF</p>
-      {{#> link edit='spotify_link' white=true spotify=true}}
-        Listen now
-      {{/link}}
-    </columns>
-  </row>
+  <div class="segment segment--narrow spotify">
+    <img class="spotify__title" src="images/placeholder-title-white.png" width="420" alt="Playlist title">
+    <p class="title" mc:edit="spotify_text">Playlist by Halli at Ueno SF</p>
+    {{#> link edit='spotify_link' white=true spotify=true}}
+      Listen now
+    {{/link}}
+  </div>
 {{/section}}
