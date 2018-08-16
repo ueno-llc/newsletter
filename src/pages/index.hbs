@@ -7,6 +7,13 @@
     .design-gallery__item img {
       padding-bottom: 20px;
     }
+
+    /* @tab Spotify */
+    .section--spotify {
+      /* @editable */ background-image: url('images/placeholder-spotify-background.jpg');
+      background-size: auto 100%;
+      background-position: right center;
+    }
   </style>
 {{/inline}}
 
@@ -235,6 +242,18 @@
       {{> design-gallery-item n=4}}
       {{> design-gallery-item n=5}}
       {{> design-gallery-item n=6}}
+    </columns>
+  </row>
+{{/section}}
+
+{{#> section variant="Spotify" spotify=true}}
+  <row class="narrow spotify">
+    <columns>
+      <img class="spotify__title" src="images/placeholder-title-white.png" width="420" alt="Playlist title">
+      <p class="title" mc:edit="spotify_text">Playlist by Halli at Ueno SF</p>
+      {{#> link edit='spotify_link' white=true spotify=true}}
+        Listen now
+      {{/link}}
     </columns>
   </row>
 {{/section}}

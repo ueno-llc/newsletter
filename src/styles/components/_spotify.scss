@@ -1,0 +1,15 @@
+.spotify {
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  .title {
+    color: $color-white;
+    opacity: 0.8;
+    margin-bottom: 35px;
+
+    @include on-mobile {
+      margin-bottom: 25px !important;
+    }
+  }
+}

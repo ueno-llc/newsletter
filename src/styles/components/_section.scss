@@ -21,4 +21,15 @@
       padding-bottom: 100px !important;
     }
   }
+
+  &--spotify {
+    padding-top: 64px;
+    padding-bottom: 70px;
+    background-color: $color-green;
+
+    @include on-mobile {
+      padding-top: 50px !important;
+      padding-bottom: 50px !important;
+    }
+  }
 }
