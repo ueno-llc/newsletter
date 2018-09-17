@@ -1,15 +1,24 @@
 .spotify {
-  &__title {
-    margin-bottom: 10px;
-  }
+  overflow: hidden;
+  clear: both;
 
-  .title {
-    color: $color-white;
-    opacity: 0.8;
-    margin-bottom: 35px;
+  &__main {
+    padding-top: 80px;
+    width: 400px;
+    float: left;
 
     @include on-mobile {
-      margin-bottom: 25px !important;
+      width: auto;
+    }
+  }
+
+  &__photo {
+    width: 180px;
+    float: right;
+    clear: none;
+
+    @include on-mobile {
+      display: none !important;
     }
   }
 }

@@ -8,13 +8,6 @@
       padding-bottom: 20px;
     }
 
-    /* @tab Spotify */
-    .section--spotify {
-      /* @editable */ background-image: url('images/placeholder-spotify-background.jpg');
-      background-size: auto 100%;
-      background-position: right center;
-    }
-
     .first-story:last-child {
       margin-bottom: 30px;
     }
@@ -216,12 +209,19 @@
   </row>
 {{/section}}
 
-{{#> section variant="Spotify" spotify=true}}
-  <div class="segment segment--narrow spotify">
-    <img class="spotify__title" src="images/placeholder-title-white.png" width="420" alt="Playlist title">
-    <p class="title" mc:edit="spotify_text">Playlist by Halli at Ueno SF</p>
-    {{#> link edit='spotify_link' white=true spotify=true}}
-      Listen now
-    {{/link}}
+{{#> section variant="Spotify" collapse=true}}
+  <div class="spotify">
+    <div class="spotify__main">
+      <div class="segment segment--narrow">
+        <img src="images/placeholder-title-narrow.jpg" mc:edit="spotify_title" alt="Hi I'm title. This subtitle wraps to two lines." class="image image--title image--narrow-title" />
+        <div class="body-text" mc:edit="spotify_text">
+          <p>Korry, our producer in SF likes classical music. True story. Listen to her favs lorem ipsum bla bla.</p>
+        </div>
+        {{#> link edit='spotify_link'}}
+          Listen on Spotify
+        {{/link}}
+      </div>
+    </div>
+    <img src="images/placeholder-180.jpg" alt="" width="180" height="380" class="spotify__photo" mc:edit="spotify_photo">
   </div>
 {{/section}}

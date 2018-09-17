@@ -10,6 +10,13 @@
     padding-bottom: 32px;
   }
 
+  &--narrow-title {
+    @include on-mobile {
+      height: 58px !important;
+      width: auto !important;
+    }
+  }
+
   // Upper image, appears below the first title
   &--upper {
     margin-top: 30px;

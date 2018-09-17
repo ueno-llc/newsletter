@@ -18,10 +18,6 @@
     color: $color-black;
   }
 
-  &--white &__text {
-    color: $color-white;
-  }
-
   .body &__caret {
     display: inline;
     width: 5px;
@@ -32,13 +28,5 @@
     @include antialias;
     position: relative;
     top: 1px;
-  }
-
-  .body &__icon {
-    width: 16px;
-    height: 16px;
-    display: inline;
-    vertical-align: middle;
-    margin-left: 3px;
   }
 }
