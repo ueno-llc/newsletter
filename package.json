@@ -26,5 +26,8 @@
     "panini": "^2.0.0-alpha.2",
     "rimraf": "^2.6.2",
     "scow": "^4.0.0-alpha.5"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }
