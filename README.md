@@ -40,6 +40,15 @@ npm run build
 
 A ZIP file will be created with the CSS inlined into the email, and all images referenced by the email included. You can upload these ZIP files to Mailchimp to create a template.
 
+## Testing
+
+Based on the metrics of our mailing list, we test in these email clients:
+
+- Gmail: Web, iOS
+- G Suite: Web
+- Outlook: 2016
+- Mail.app: iOS, macOS
+
 ## License
 
 MIT &copy; [ueno.](https://ueno.co)
