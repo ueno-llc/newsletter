@@ -12,7 +12,7 @@ scripts:
   emails:
     default: panini src build && inky "build/*.html" build
     watch: onchange "src/**/*.{hbs,yml,js}" -i -- nps emails
-    inline: nps emails && scow "build/**/*.html" dist
+    inline: nps emails && scow "build/**/*.html" dist --compress
   # Copy static assets
   assets:
     default: cpy "**/*.*" "../../build" --cwd=src/assets --parents
