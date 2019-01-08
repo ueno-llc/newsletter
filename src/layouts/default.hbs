@@ -17,8 +17,19 @@
   			font-weight: normal;
   			text-decoration: underline;
       }
+
+      .dear-ueno__question-body p:last-child {
+        margin-bottom: 0;
+      }
+
+      .design-gallery__item img {
+        padding-bottom: 20px;
+      }
+
+      .first-story:last-child {
+        margin-bottom: 30px;
+      }
     </style>
-    {{#> style}}{{/style}}
   </head>
   <body>
     {{> fonts}}
@@ -27,7 +38,7 @@
         <td class="center" align="center" valign="top">
           <center>
             <container>
-              {{> header date=date }}
+              {{> header }}
               {{> body}}
               {{> footer}}
             </container>
