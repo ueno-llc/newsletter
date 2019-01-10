@@ -18,16 +18,13 @@
     "foundation-emails": "^2.2.1",
     "inky-cli": "^1.0.1",
     "lite-server": "^2.4.0",
-    "node-sass": "^4.9.3",
-    "nps": "^5.9.2",
-    "nps-utils": "^1.6.0",
-    "onchange": "^4.1.0",
-    "opn-cli": "^3.1.0",
+    "node-sass": "^4.11.0",
+    "nps": "^5.9.3",
+    "nps-utils": "^1.7.0",
+    "onchange": "^5.2.0",
+    "opn-cli": "^4.0.0",
     "panini": "^2.0.0-alpha.2",
-    "rimraf": "^2.6.2",
-    "scow": "^4.0.0-alpha.5"
-  },
-  "engines": {
-    "node": ">=8"
+    "rimraf": "^2.6.3",
+    "scow": "^4.0.0-alpha.6"
   }
 }
