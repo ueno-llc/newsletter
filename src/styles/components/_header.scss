@@ -31,7 +31,9 @@
 
   // Styles for date, shown in first header
   &__date {
-    font-family: $font-akagi;
+    position: relative;
+    top: -1px; // Aligns the baseline with that of the logo
+    font-family: $font-helvetica; // Defaulting to Helvetica so we can fine-tune the baseline alignment
     font-size: 15px;
     color: $color-gray;
     text-align: right;
