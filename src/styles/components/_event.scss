@@ -1,0 +1,17 @@
+.event {
+  border-top: 1px solid $body-background;
+  padding-top: 40px;
+  padding-bottom: 35px;
+
+  &--n0 {
+    border-top: 0;
+  }
+
+  .media__image {
+    margin-bottom: 15px; // Not for spacing, but to keep floated items from wrapping
+  }
+
+  .media__subtitle {
+    margin-bottom: 7px;
+  }
+}

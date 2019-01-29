@@ -13,6 +13,11 @@ table.menu th.social-nav__item {
   vertical-align: middle;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include on-mobile {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 
 .menu img.social-nav__item__icon {

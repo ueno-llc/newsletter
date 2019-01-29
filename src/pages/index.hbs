@@ -75,11 +75,11 @@
   </div>
   {{> divider color='e8e8e8' }}
   <div class="segment segment--narrow">
-    <div class="clearfix">
-      <img class="dear-ueno__avatar" alt="Justin Greene" src="images/placeholder-136.jpg" mc:edit="dearueno_answer_avatar">
-      <div class="dear-ueno__answerer">
-        <p class="dear-ueno__person" mc:edit="dearueno_answer_person">Justin Greene</p>
-        <p class="dear-ueno__title" mc:edit="dearueno_answer_title">Ueno Designer in LA answers:</p>
+    <div class="media">
+      <img class="media__image" alt="Justin Greene" src="images/placeholder-136.jpg" mc:edit="dearueno_answer_avatar">
+      <div>
+        <p class="media__title" mc:edit="dearueno_answer_person">Justin Greene</p>
+        <p class="media__subtitle" mc:edit="dearueno_answer_title">Ueno Designer in LA answers:</p>
       </div>
     </div>
     <div class="body-text dear-ueno__answer" mc:edit="dearueno_answer_body">
@@ -208,4 +208,23 @@
     </div>
     <img src="images/placeholder-180.jpg" alt="" width="180" height="380" class="spotify__photo" mc:edit="spotify_photo">
   </div>
+{{/section}}
+
+{{#> section variant="Events"}}
+  {{> header-events}}
+
+  {{#repeat 3}}
+    <div class="event event--n{{@index}} segment segment--narrow" mc:hideable data-hideable="event {{@index}}">
+      <div class="media">
+        <img class="media__image" alt="Justin Greene" src="images/placeholder-136.jpg" mc:edit="events_{{@index}}_image">
+        <div>
+          <p class="media__title" mc:edit="events_{{@index}}_title">Halli at Dribbble Hangtime LA</p>
+          <p class="media__subtitle" mc:edit="events_{{@index}}_location">Downtown LA, Feb 10th</p>
+          {{#> link edit=(concat 'events_' @index '_link')}}
+            Learn more
+          {{/link}}
+        </div>
+      </div>
+    </div>
+  {{/repeat}}
 {{/section}}

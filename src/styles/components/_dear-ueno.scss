@@ -12,45 +12,6 @@
     margin-bottom: 0;
   }
 
-  &__avatar {
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
-    float: left;
-    margin-right: 20px;
-
-    @include on-mobile {
-      width: 60px !important;
-      height: 60px !important;
-    }
-  }
-
-  &__person,
-  &__title {
-    @include antialias;
-    font-family: $font-akagi;
-    font-size: 18px;
-
-    @include on-mobile {
-      font-size: 15px !important;
-    }
-  }
-
-  &__person {
-    color: $color-off-black;
-    margin-top: 10px;
-    margin-bottom: 4px;
-
-    @include on-mobile {
-      margin-top: 10px;
-    }
-  }
-
-  &__title {
-    color: $color-gray;
-    margin-bottom: 0;
-  }
-
   &__answer {
     margin-top: 16px;
     margin-bottom: 35px;
