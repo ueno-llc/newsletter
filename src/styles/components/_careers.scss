@@ -1,0 +1,33 @@
+.careers {
+
+  &__body {
+    margin-top: 16px;
+    margin-bottom: 35px;
+  }
+
+  &__footer {
+    @include antialias;
+    margin-top: -25px;
+
+    @include on-mobile {
+      margin-top: 0 !important;
+    }
+
+    &,
+    a {
+      font-family: $font-akagi;
+      color: $color-dark-gray;
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .link {
+    display: block;
+    margin-bottom: -10px;
+  }
+}

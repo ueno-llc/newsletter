@@ -36,4 +36,13 @@
       padding-top: 30px !important;
     }
   }
+
+  &--hero {
+    padding-bottom: 50px;
+
+    @include on-mobile {
+      margin-top: 5px !important;
+      padding-bottom: 30px !important;
+    }
+  }
 }

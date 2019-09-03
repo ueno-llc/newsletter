@@ -31,6 +31,10 @@
     padding-right: $global-gutter * 2;
   }
 
+  &--careers {
+    margin-bottom: 40px;
+  }
+
   @include on-mobile {
     padding-left: $global-gutter / 2 !important;
     padding-right: $global-gutter / 2 !important;

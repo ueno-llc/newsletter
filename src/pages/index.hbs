@@ -44,6 +44,7 @@
   <div mc:hideable data-hideable="third story">
     <div class="segment segment--narrow">
       {{> divider safeguard='true' }}
+
       <a href="#">
         <img src="images/placeholder-title.jpg" mc:edit="article_3_title" width="420" alt="Hi I'm title. This subtitle wraps to two lines." class="image image--title" />
       </a>
@@ -62,6 +63,37 @@
     </div>
   </div>
 {{/section}}
+
+
+
+
+
+
+{{#> section variant="Careers"}}
+  {{> header-careers}}
+
+  <a href="#">
+    <img src="images/placeholder-1160-232.jpg" mc:edit="careers_image" class="image image--hero" width="580" alt="Art wall from inside ueno office." />
+  </a>
+
+  <div class="segment segment--narrow segment--careers">
+    <div class="media">
+      <p class="media__title" mc:edit="careers_title">Creative Director</p>
+      <p class="media__subtitle" mc:edit="careers_subtitle">San Francisco</p>
+    </div>
+    <div class="body-text body-text--dark careers__body" mc:edit="careers_body">
+      <p>Creative Directors are directly responsible for the successful outcome of the projects they oversee. They lead and mentor a team of designers, and work directly and closely with our clients.</p>
+    </div>
+    {{#> link edit='careers_link' }}
+      Learn more
+    {{/link}}
+  </div>
+{{/section}}
+
+
+
+
+
 
 {{#> section variant="Dear Ueno"}}
   <div class="segment segment--narrow">
