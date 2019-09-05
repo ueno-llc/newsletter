@@ -13,7 +13,7 @@
 
   p {
     @include antialias;
-    font-family: $font-akagi;
+    font-family: $font-national;
     font-size: 16px;
     line-height: 27px;
     color: $color-gray;
@@ -28,7 +28,7 @@
     &,
     &:link,
     &:visited {
-      font-family: $font-akagi;
+      font-family: $font-national;
       color: $color-gray;
 			font-weight: normal;
 			text-decoration: underline;

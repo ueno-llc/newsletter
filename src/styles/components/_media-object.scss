@@ -18,7 +18,7 @@
   &__title,
   &__subtitle {
     @include antialias;
-    font-family: $font-akagi;
+    font-family: $font-national;
     font-size: 18px;
 
     @include on-mobile {

@@ -2,6 +2,10 @@
   &__logo {
     padding-top: 80px;
     margin-bottom: 30px;
+
+    @include on-mobile {
+      padding-top: 50px;
+    }
   }
 
   &__question-title {
@@ -27,7 +31,7 @@
 
     &,
     a {
-      font-family: $font-akagi;
+      font-family: $font-national;
       color: $color-dark-gray;
       font-size: 13px;
       line-height: 18px;

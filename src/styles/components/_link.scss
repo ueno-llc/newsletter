@@ -3,9 +3,10 @@
 ////
 
 .link {
-  font-family: $font-akagi;
+  font-family: $font-national;
   font-size: 14px;
   font-weight: bold;
+  font-weight: 500;
 
   @include on-mobile {
     font-size: 14px !important;

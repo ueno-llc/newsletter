@@ -94,7 +94,6 @@
 
 
 
-
 {{#> section variant="Dear Ueno"}}
   <div class="segment segment--narrow">
     <img class="dear-ueno__logo" src="images/dear-ueno.jpg" width="420" alt="Dear Ueno. Our advice column." mc:edit="dearueno_title">
@@ -124,7 +123,9 @@
   </div>
   {{> divider color='e8e8e8' }}
   <div class="segment segment--narrow">
-    <p class="dear-ueno__footer" mc:edit="dearueno_footer">Got a question you want us to answer?<br><a href="https://medium.com/ueno/dear-ueno-b6946471b26a">Learn more about Dear Ueno and how to submit questions</a></p>
+    <p class="dear-ueno__footer" mc:edit="dearueno_footer">
+      Need advice? Email your questions to <a href="mailto:hi@ueno.co">hi@ueno.co</a> with &ldquo;Dear Ueno,&rdquo; in the subject, or tweet at us with <a href="https://twitter.com/search?f=tweets&amp;vertical=default&amp;q=%23dearueno&amp;src=typd">#DearUeno</a>. You can also check out our <a href="https://loremipsum.ueno.co/dear-ueno/">old advice</a> or read about <a href="https://medium.com/ueno/dear-ueno-b6946471b26a">why we&rsquo;re doing this</a>. (Nothing bad will happen.)
+    </p>
   </div>
 {{/section}}
 
@@ -198,7 +199,7 @@
     <img src="images/placeholder-1160.jpg" mc:edit="store_2_image" class="image" width="580" alt="Feet wearing cat-themed socks with stripes" />
   </a>
 
-  <div class="segment segment--narrow store-item-2">
+  <div class="segment segment--narrow store-item-2" mc:hideable data-hideable="store-item-2">
     <p class="title" mc:edit="store_2_name"><a href="#">
       Cat Socks &mdash; $8.99
     </a></p>
@@ -248,7 +249,7 @@
   {{#repeat 3}}
     <div class="event event--n{{@index}} segment segment--narrow" mc:hideable data-hideable="event {{@index}}">
       <div class="media">
-        <img class="media__image" alt="Justin Greene" src="images/placeholder-136.jpg" mc:edit="events_{{@index}}_image">
+        <img class="media__image event__image" alt="Justin Greene" src="images/placeholder-136.jpg" mc:edit="events_{{@index}}_image">
         <div>
           <p class="media__title" mc:edit="events_{{@index}}_title">Halli at Dribbble Hangtime LA</p>
           <p class="media__subtitle" mc:edit="events_{{@index}}_location">Downtown LA, Feb 10th</p>

@@ -18,7 +18,7 @@
     }
 
     &--careers {
-      width: 124px;
+      width: 148px;
       height: 18px;
     }
 
@@ -44,7 +44,8 @@
     position: relative;
     top: -1px; // Aligns the baseline with that of the logo
     font-family: $font-helvetica; // Defaulting to Helvetica so we can fine-tune the baseline alignment
-    font-size: 15px;
+    font-family: $font-national;
+    font-size: 16px;
     color: $color-gray;
     text-align: right;
 
