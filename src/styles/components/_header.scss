@@ -42,7 +42,7 @@
   // Styles for date, shown in first header
   &__date {
     position: relative;
-    top: -1px; // Aligns the baseline with that of the logo
+    top: -3px; // Aligns the baseline with that of the logo
     font-family: $font-helvetica; // Defaulting to Helvetica so we can fine-tune the baseline alignment
     font-family: $font-national;
     font-size: 16px;
