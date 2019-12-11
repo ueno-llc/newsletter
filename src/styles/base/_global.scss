@@ -7,20 +7,25 @@
   float: none;
 }
 
-// Body text
+table.body,
+table.footer {
+  background: $container-background !important;
+}
+
+// Body text;
 .body-text {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 
   p {
     @include antialias;
     font-family: $font-national;
-    font-size: 16px;
-    line-height: 27px;
-    color: $color-gray;
+    font-size: 18px;
+    line-height: 1.556;
+    color: $color-black;
 
     @include on-mobile {
-      font-size: 14px !important;
-      line-height: 21px !important;
+      font-size: 16px !important;
+      line-height: 23px !important;
     }
   }
 
@@ -29,7 +34,7 @@
     &:link,
     &:visited {
       font-family: $font-national;
-      color: $color-gray;
+      color: $color-black;
 			font-weight: normal;
 			text-decoration: underline;
     }

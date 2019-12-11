@@ -10,10 +10,10 @@ $global-gutter: 40px;
 // Global colors. Make sure any color statement uses one of these
 $color-black: #000;
 $color-off-black: #1a1a1a;
-$color-dark-gray: #999999;
+$color-dark-gray: #6f6f6f;
 $color-gray: #777b85;
 $color-light-gray: #9ea0a6;
-$color-white: #fff;
+$color-white: #bababa;
 $color-green: #00E2AC;
 
 // Web fonts in use
@@ -23,7 +23,7 @@ $font-helvetica: Helvetica, Arial, sans-serif;
 
 
 // Make background transparent so inner sections can be white
-$container-background: transparent;
+$container-background: #a8a8a8;
 
 // Remove bottom padding from columns
 $column-padding-bottom: 0px;
