@@ -18,7 +18,7 @@
     "foundation-emails": "^2.2.1",
     "inky-cli": "^1.0.1",
     "lite-server": "^2.4.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "nps": "^5.9.3",
     "nps-utils": "^1.7.0",
     "onchange": "^5.2.0",
